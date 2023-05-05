@@ -26,6 +26,10 @@ The most important files are CVRP.py and CVRP_TW.py as these contain the solvers
 * functions.py
 
   This file is referenced in "matrices_generator_CVRP.py" and "matrices_generator_CVRP_TW.py" and contains two functions. One is used to join together adjacent zones if possible and the other to calculate the Euclidian distance.
+  
+* charging_schedule.py
+
+  This file uses the Gurobi solver to determine a charging schedule which minimizes the amount of chargers needed. A function in the file is used to determine how many cars are needed each day. This function is based on the results of running "CVRP_TW.py" for several days with an 8h working day and the vehicle with the smaller capacity. Would any other setting be used, this function should be reestimated.
 
 * locations.csv & packages.csv
 
