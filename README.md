@@ -3,7 +3,7 @@
 ## Integrated practicum 1, assignment 2: Smart management of electrified last-mile delivery fleets + time windows
 
 ## Usage
-The most important files are CVRP.py and CVRP_TW.py as these contain the solvers that solve the routing problem. The solvers need matrices and these are generated in matrices_generator_CVRP.py for CVRP.py and in matrices_generator_CVRP_TW for CVRP_TW.py. Next each file in the repository is explained independently, read this carefully before usage.
+The most important files are CVRP.py and CVRP_TW.py as these contain the solvers that solve the routing problem. The solvers need inputs and these are generated in matrices_generator_CVRP.py for CVRP.py and in matrices_generator_CVRP_TW for CVRP_TW.py. Next each file in the repository is explained independently, read this carefully before usage.
 
 * CVRP.py
 
