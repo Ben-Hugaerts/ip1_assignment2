@@ -25,11 +25,11 @@ The most important files are CVRP.py and CVRP_TW.py as these contain the solvers
 
 * functions.py
 
-This file is referenced in "matrices_generator_CVRP.py" and "matrices_generator_CVRP_TW.py" and contains two functions. One is used to join together adjacent zones if possible and the other to calculate the Euclidian distance.
+  This file is referenced in "matrices_generator_CVRP.py" and "matrices_generator_CVRP_TW.py" and contains two functions. One is used to join together adjacent zones if possible and the other to calculate the Euclidian distance.
 
 * locations.csv & packages.csv
 
-The given data containing the locations and packages that need to be delivered respectively. ! Note that 2 small modifications were made in the locations.csv file. Coordinate 16632 and 23686 were shifted a very small amount (1m-5m) because otherwise the Valhalla API was unable to find a route to these locations. !
+  The given data containing the locations and packages that need to be delivered respectively. ! Note that 2 small modifications were made in the locations.csv file. Coordinate 16632 and 23686 were shifted a very small amount (1m-5m) because otherwise the Valhalla API was unable to find a route to these locations. !
 
 ## Valhalla Docker image
 To use "matrices_generator_CVRP.py" and "matrices_generator_CVRP_TW.py" you need to run the Valhalla Docker image in a container with a graoh if Belgium. First install Docker Desktop using the link below:
