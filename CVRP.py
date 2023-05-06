@@ -358,7 +358,7 @@ if __name__ == '__main__':
         (num_combined, TOT_combined, TOT_distance, TOT_time) = combined_carsAllZones[k]
         print('  Combination of {} vehicles: total distance {}km & total time {}min'.format(num_combined, TOT_distance,
                                                                                             round(TOT_time)))
-        resultfile+='  Combination of {} vehicles: total distance {}km & total time {}min'.format(num_combined, TOT_distance,
+        resultfile+='  Combination of {} vehicles: total distance {}km & total time {}min\n'.format(num_combined, TOT_distance,
                                                                                             round(TOT_time))
         for j in range(num_combined):
             (zone_A, vehicle_A) = TOT_combined[j]
@@ -366,12 +366,13 @@ if __name__ == '__main__':
             cumul_dist += total_distance_vehicle_A
             if cumul_dist >= max_range_LCV:
                 print(f"     * Charging of vehicle required for at least {int((charging_time/max_range_LCV) * (TOT_distance - max_range_LCV))} min * ")
+                resultfile += f"     * Charging of vehicle required for at least {int((charging_time/max_range_LCV) * (TOT_distance - max_range_LCV))} min * \n"
                 cumul_dist = 0
             print(
                 '     Vehicle (zone {},{}): distance: {}km & driving time: {}min'.format((zone_A + 1), (vehicle_A + 1),
                                                                                          total_distance_vehicle_A,
                                                                                          round(driving_time_vehicle_A)))
-            resultfile+='     Vehicle (zone {},{}): distance: {}km & driving time: {}min'.format((zone_A + 1), (vehicle_A + 1),
+            resultfile+='     Vehicle (zone {},{}): distance: {}km & driving time: {}min\n'.format((zone_A + 1), (vehicle_A + 1),
                                                                                          total_distance_vehicle_A,
                                                                                          round(driving_time_vehicle_A))
 
