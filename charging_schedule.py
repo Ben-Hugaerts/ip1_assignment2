@@ -72,9 +72,8 @@ m.addConstr(total_cars_in_inv == quicksum(inv))
 m.addConstr(total_cars_in_inv_d == max(cars)*len(cars)-quicksum(inv)-quicksum(cars))
 
 # Set the objective to minimize the maximum production per day
-m.setObjective(max_prod, GRB.MINIMIZE)
-# m.setObjective(max_prod + (total_cars_in_inv + total_cars_in_inv_d)/(2 * sum(cars)), GRB.MINIMIZE)
-#   --> This also works and can lower the time a vehicle remains at the depot
+m.setObjective(max_prod - total_cars_in_inv/len(cars), GRB.MINIMIZE)
+# m.setObjective(max_prod, GRB.MINIMIZE)
 
 # Add a constraint that the production per day must be less than or equal to the maximum production per day
 for i in range(len(cars)):
