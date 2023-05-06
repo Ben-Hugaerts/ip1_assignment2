@@ -47,7 +47,7 @@ resultfile += str("\n \n")
 
 adjusted_cost_driven_km = 1
 adjusted_vehicle_cost = real_vehicle_cost * (adjusted_cost_driven_km / cost_driven_km)
-with open('distance_matrix.json', 'r') as distance_matrix_file:
+with open('inputs_CVRP/12_08_2022/distance_matrix.json', 'r') as distance_matrix_file:
     all_distance_matrices = json.load(distance_matrix_file)
     num_zones = len(all_distance_matrices)  # Read the number of zones used
 
@@ -62,15 +62,15 @@ total_distance_all_zones = 0
 def create_data_model(num_vehicles, zone):
     """Stores the data for the problem."""
     data = {}
-    with open('distance_matrix.json', 'r') as distance_matrix_file:
+    with open('inputs_CVRP/12_08_2022/distance_matrix.json', 'r') as distance_matrix_file:
         distance_matrices = json.load(distance_matrix_file)
         data['distance_matrix'] = distance_matrices[zone]
 
-    with open('total_volumes_in_cm3.json', 'r') as total_volumes_file:
+    with open('inputs_CVRP/12_08_2022/total_volumes_in_cm3.json', 'r') as total_volumes_file:
         volumes = json.load(total_volumes_file)
         data['demands'] = volumes[zone]
 
-    with open('time_matrix.json', 'r') as time_matrix_file:
+    with open('inputs_CVRP/12_08_2022/time_matrix.json', 'r') as time_matrix_file:
         time_matrices = json.load(time_matrix_file)
         # Add service times to the routes
         for p in range(len(time_matrices)):
@@ -79,7 +79,7 @@ def create_data_model(num_vehicles, zone):
                     time_matrices[p][r][c] += service_time
         data['time_matrix'] = time_matrices[zone]
 
-    with open('location_ids.json', 'r') as locations_file:
+    with open('inputs_CVRP/12_08_2022/location_ids.json', 'r') as locations_file:
         location_ids_all = json.load(locations_file)
         data['locations_ids'] = location_ids_all[zone]
 
@@ -354,6 +354,7 @@ if __name__ == '__main__':
     print("Vehicles combined: ")
     resultfile+='Vehicles combined: \n'
     for k in range(len(combined_carsAllZones)):
+        cumul_dist = 0
         (num_combined, TOT_combined, TOT_distance, TOT_time) = combined_carsAllZones[k]
         print('  Combination of {} vehicles: total distance {}km & total time {}min'.format(num_combined, TOT_distance,
                                                                                             round(TOT_time)))
@@ -362,6 +363,10 @@ if __name__ == '__main__':
         for j in range(num_combined):
             (zone_A, vehicle_A) = TOT_combined[j]
             [total_distance_vehicle_A, driving_time_vehicle_A] = informationReduceVehicleAllZones[zone_A][vehicle_A]
+            cumul_dist += total_distance_vehicle_A
+            if cumul_dist >= max_range_LCV:
+                print(f"     * Charging of vehicle required for at least {int((charging_time/max_range_LCV) * (TOT_distance - max_range_LCV))} min * ")
+                cumul_dist = 0
             print(
                 '     Vehicle (zone {},{}): distance: {}km & driving time: {}min'.format((zone_A + 1), (vehicle_A + 1),
                                                                                          total_distance_vehicle_A,
@@ -369,7 +374,6 @@ if __name__ == '__main__':
             resultfile+='     Vehicle (zone {},{}): distance: {}km & driving time: {}min'.format((zone_A + 1), (vehicle_A + 1),
                                                                                          total_distance_vehicle_A,
                                                                                          round(driving_time_vehicle_A))
-
 
 
 location = 'Results/' + titleResultfile
