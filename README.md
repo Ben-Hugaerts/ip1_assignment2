@@ -16,10 +16,14 @@ The most important files are CVRP.py and CVRP_TW.py as these contain the solvers
 * matrices_generator_CVRP.py
 
   ! This file needs have a Valhalla docker image running in a container --> See instructions below !
+  ! Running this file is resource intensive, CPU usage, RAM usage and disk usage may peak !
   
   This file generates the inputs necessary to run "CVRP.py" for one day. These inputs are lists containing the location IDs of each zone, the volumes that should be delivered at each location for each zone abd the distance and time matrices of each zone. The locations for the day are divided into 5 zones based on their coordinates. Adjacent zones may be joined together if their combined size isn't too large. To construct the distance and time matrices with respect to real road layout, the Valhalla API is used. Note that not all the matrix elements are calculated, but only those closest, as the crow flies, to the origin coordinate. This file uses functions from the "functions.py" file. The only parameter you can change in this file is the date for which the inputs are generated.
 
 * matrices_generator_CVRP_TW.py
+
+  ! This file needs have a Valhalla docker image running in a container --> See instructions below !
+  ! Running this file is resource intensive, CPU usage, RAM usage and disk usage may peak !
 
   This file generates the inputs necessary to run "CVRP_TW.py" for one day. These inputs are lists containing the location IDs of each time interval, the volumes that should be delivered at each location for each time interval, the time windows of each time interval and the distance and time matrices of each time interval. The time windows are generated randomly and one for every location. Locations are divided into time intervals based on their time window. Usually, but not necessarly the possible time windows and time intervals are the same. To construct the distance and time matrices with respect to real road layout, the Valhalla API is used. Note that not all the matrix elements are calculated, but only those closest, as the crow flies, to the origin coordinate (= each row corresponds to a different origin coordinate and row by row the matrices are constructed). This file uses functions from the "functions.py" file. The only parameter you can change in this file is the date for which the inputs are generated.
 
@@ -29,11 +33,15 @@ The most important files are CVRP.py and CVRP_TW.py as these contain the solvers
   
 * charging_schedule.py
 
-  This file uses the Gurobi solver to determine a charging schedule which minimizes the amount of chargers needed. A function in the file is used to determine how many cars are needed each day. This function is based on the results of running "CVRP_TW.py" for several days with an 8h working day and the vehicle with the smaller capacity. Would any other setting be used, this function should be reestimated.
+  This file uses the Gurobi solver to determine a charging schedule which minimizes the amount of chargers needed while also maximizing the amount of fully charged vehicles available at the depot. By selecting time windows or not, this file uses the results from "CVRP.py" and "CVRP_TW.py" with the final parameters to estimate the amount of cars needed. This estimation is not integrated for now, but rather functions are fitted to some results of "CVRP.py" and "CVRP_TW.py". Would any other setting be used, these functions for now should be reestimated manually. Secondly this file also produces another schedule which specifies based on the results of the first schedule when exactly how much vehicles should be charged based on dynamic electricity prices.
 
 * locations.csv & packages.csv
 
   The given data containing the locations and packages that need to be delivered respectively. ! Note that 2 small modifications were made in the locations.csv file. Coordinate 16632 and 23686 were shifted a very small amount (1m-5m) because otherwise the Valhalla API was unable to find a route to these locations. !
+
+* Results directory
+
+  When running "CVRP.py" and "CVRP_TW.py" textfiles are generated with the results and stored here. Two examples of these results are already available
 
 ## Valhalla Docker image
 To use "matrices_generator_CVRP.py" and "matrices_generator_CVRP_TW.py" you need to run the Valhalla Docker image in a container with a graoh if Belgium. First install Docker Desktop using the link below:
