@@ -35,10 +35,9 @@ volumes = [0] + volumes
 
 # Generate time windows
 timewindows = []
-# In hours
-TotalTimeWindow = 8
-TimeWindowPerLocation = 2
-num_zones = 4
+# Time window parameters in hours
+TotalTimeWindow = 8 # Length of the working day
+TimeWindowPerLocation = 2 # Length of time windows, time windows are sequential and non-overlapping
 
 # Possible start times
 possible_start_times = []
@@ -56,6 +55,10 @@ valhalla_coordinates = [{'lat': float(row[2]), 'lon': float(row[1])} for i, row 
 valhalla_coordinates = [{'lat': lat_depot, 'lon': lon_depot}] + valhalla_coordinates
 
 # Create a list of the location IDs and valhalla_coordinates belonging to each zone
+# The locations are divided into 4 time intervals based on its time window
+# A time interval can contain multiple time windows, but our examples always have one time window per time interval
+num_zones = 4
+
 zone1_location_ids = ['depot']
 zone1_valhalla_coordinates = [{'lat': lat_depot, 'lon': lon_depot}]
 zone1_volumes = [0]
@@ -81,7 +84,7 @@ valhalla_zones = [zone1_valhalla_coordinates, zone2_valhalla_coordinates, zone3_
 volumes_zones = [zone1_volumes, zone2_volumes, zone3_volumes, zone4_volumes]
 
 for i in range(len(location_ids)-1):
-    # Determine which zone the location belongs to based on its coordinates
+    # Determine which zone the location belongs to based on its time window
     if timewindows[i][1] <= (TotalTimeWindow // num_zones)*1*60:
         zone1_location_ids.append(location_ids[i])
         zone1_valhalla_coordinates.append(valhalla_coordinates[i])
@@ -104,7 +107,7 @@ for i in range(len(location_ids)-1):
         zone4_time_windows.append(timewindows[i])
 
 print("---------------------------------------------------")
-print(f" ** Sizes of the zones on {date} **")
+print(f" ** Sizes of the intervals on {date} **")
 print(f"Time block 1 consists of {len(zone1_location_ids)} locations")
 print(f"Time block 2 consists of {len(zone2_location_ids)} locations")
 print(f"Time block 3 consists of {len(zone3_location_ids)} locations")
@@ -112,21 +115,25 @@ print(f"Time block 4 consists of {len(zone4_location_ids)} locations")
 print("---------------------------------------------------")
 print("Starting building of matrices ...")
 
+# Initialize the distance matrices
 distance_matrix_zone1 = [[1e10] * len(zone1_location_ids) for _ in range(len(zone1_location_ids))]
 distance_matrix_zone2 = [[1e10] * len(zone2_location_ids) for _ in range(len(zone2_location_ids))]
 distance_matrix_zone3 = [[1e10] * len(zone3_location_ids) for _ in range(len(zone3_location_ids))]
 distance_matrix_zone4 = [[1e10] * len(zone4_location_ids) for _ in range(len(zone4_location_ids))]
 
+# Initialize the time matrices
 time_matrix_zone1 = [[1e10] * len(zone1_location_ids) for _ in range(len(zone1_location_ids))]
 time_matrix_zone2 = [[1e10] * len(zone2_location_ids) for _ in range(len(zone2_location_ids))]
 time_matrix_zone3 = [[1e10] * len(zone3_location_ids) for _ in range(len(zone3_location_ids))]
 time_matrix_zone4 = [[1e10] * len(zone4_location_ids) for _ in range(len(zone4_location_ids))]
 
+# Group the zones in lists
 distance_matrices = [distance_matrix_zone1, distance_matrix_zone2, distance_matrix_zone3, distance_matrix_zone4]
 time_matrices = [time_matrix_zone1, time_matrix_zone2, time_matrix_zone3, time_matrix_zone4]
 time_windows = [zone1_time_windows, zone2_time_windows, zone3_time_windows, zone4_time_windows]
 
-# Define a function that processes a single location
+
+# This function determines the distance and time over real routes between one origin and k destinations
 def process_location(i, loc_id, coord, valhalla_coordinates, location_ids, distance_matrix, time_matrix):
     distances = []
     for j, (other_id, other_coord) in enumerate(zip(location_ids, valhalla_coordinates)):
@@ -140,6 +147,7 @@ def process_location(i, loc_id, coord, valhalla_coordinates, location_ids, dista
     closest = distances[:k]
     target_location_ids = [t[0] for t in closest]  # extract location IDs from tuples
     target_coordinates = [{'lat': lat_depot, 'lon': lon_depot}]
+    # Retrieve the indexes to fill in the values at the right position
     index_list = [0]
     for location_id in target_location_ids:
         index = location_ids.index(location_id)
@@ -161,7 +169,7 @@ def process_location(i, loc_id, coord, valhalla_coordinates, location_ids, dista
     else:
         print(f"Request failed with status code {response.status_code}: {response.content}")
 
-    # Populate the matrices with the distances and times
+    # Fill the current row of the matrices with the distances and times at the right indexes
     for l in range(len(index_list)):
         distance_matrix[i][index_list[l]] = data['sources_to_targets'][0][l]['distance']
         time_matrix[i][index_list[l]] = data['sources_to_targets'][0][l]['time']
@@ -169,17 +177,16 @@ def process_location(i, loc_id, coord, valhalla_coordinates, location_ids, dista
     distance_matrix[i][i] = 0
     time_matrix[i][i] = 0
 
-
+# Construct the matrices for all the zones
 for p in range(len(ids_zones)):
-    # Number of closest locations to find
+    # Loop over the zones
+
+    # Number of closest locations to find per location
     k = 100
 
-    distance_matrices[p] = [[1e10] * len(ids_zones[p]) for _ in range(len(ids_zones[p]))]
-    time_matrices[p] = [[1e10] * len(ids_zones[p]) for _ in range(len(ids_zones[p]))]
-
+    # Matrices are constructed row by row and this process is sped up by multithreading
     threads = []
-
-    with ThreadPoolExecutor(max_workers=8) as executor:
+    with ThreadPoolExecutor() as executor:
         # Loop through each location and submit a task to the thread pool
         for i, (loc_id, coord) in enumerate(zip(ids_zones[p], valhalla_zones[p])):
             t = executor.submit(process_location, i, loc_id, coord, valhalla_zones[p], ids_zones[p], distance_matrices[p], time_matrices[p])
@@ -193,7 +200,7 @@ for p in range(len(ids_zones)):
         if t.exception() is not None:
             raise t.exception()
 
-    # Depot request
+    # Depot request (distance and time to all locations is determined by working with batches
     # Construct request for Valhalla
     start_time_depot = time.time()
 
@@ -238,19 +245,15 @@ for p in range(len(ids_zones)):
 
 
 # Save results
-#print("Location IDs: ", location_ids)
 with open('location_ids.json', 'w') as location_ids_json:
     json.dump(ids_zones, location_ids_json)
 
-#print("Total volumes in cm3: ", volumes)
 with open('total_volumes_in_cm3.json', 'w') as volumes_json:
     json.dump(volumes_zones, volumes_json)
 
-#print("Distance matrix in km: ", distance_matrix)
 with open('distance_matrix.json', 'w') as distance_matrix_json:
     json.dump(distance_matrices, distance_matrix_json)
 
-#print("Time matrix in seconds: ", time_matrix)
 with open('time_matrix.json', 'w') as time_matrix_json:
     json.dump(time_matrices, time_matrix_json)
 
