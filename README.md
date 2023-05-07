@@ -39,6 +39,10 @@ The most important files are CVRP.py and CVRP_TW.py as these contain the solvers
 
   The given data containing the locations and packages that need to be delivered respectively. ! Note that 2 small modifications were made in the locations.csv file. Coordinate 16632 and 23686 were shifted a very small amount (1m-5m) because otherwise the Valhalla API was unable to find a route to these locations. !
 
+* prices.csv
+
+  Contains hourly electricity prices of the considered period, donwloaded from: https://my.elexys.be/MarketInformation/SpotBelpex.aspx
+
 * Results directory
 
   When running "CVRP.py" and "CVRP_TW.py" textfiles are generated with the results and stored here. Two examples of these results are already available
