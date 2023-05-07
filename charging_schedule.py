@@ -102,17 +102,17 @@ m.optimize()
 # Print the result
 # Define the column widths
 date_width = 15
-charge_width = 40
+charge_width = 60
 dep_width = 35
 demand_width = 20
 
 # Print the headers
-print(f"{'Date':<{date_width}}{'Charging':<{charge_width}}{'Vehicles at depot the next day':<{dep_width}}{'Vehicles needed the next day':<{demand_width}}")
+print(f"{'Date':<{date_width}}{'Charging (Night before or during the day: see schedule)':<{charge_width}}{'Vehicles at depot the next day':<{dep_width}}{'Vehicles needed the next day':<{demand_width}}")
 print("-" * (date_width + charge_width + dep_width + demand_width + 3))
 
 # Print the data
 for i in range(len(cars)):
-    charge_str = f"At most {int(charg[i].x)} chargers are needed"
+    charge_str = f"Charge {int(charg[i].x)} vehicles"
     dep_str = f"{int(dep[i].x)} charged, {int(max(cars) - dep[i].x - cars[i])} decharged "
     demand_str = f"{int(cars[i])} vehicles"
     print(
