@@ -1,0 +1,650 @@
+Parameters:
+   Vehicle:
+      capacity: 3.5m^3 
+      max range: 185km 
+      charging time: 5.0h
+   Costs:
+      vehicle cost : 40000EUR 
+      cost per km: 0.3EUR
+   Parameters algorithm:
+      max time per vehicle: 720min 
+      num_vehicle: 50 
+      searchLimit_sec: 20
+
+ 
+
+
+---------------------------------------------------
+** Zone1**
+Objective: {3600897}
+
+Route for vehicle 32:
+depot Time(0,0)Load(0.0) -> 9710 Time(16,16)Load(0.016) -> 25411 Time(25,25)Load(0.02) -> 22448 Time(28,28)Load(0.028) -> 16264 Time(30,30)Load(0.033) -> 15358 Time(36,36)Load(0.042) -> 11167 Time(39,39)Load(0.074) -> 7060 Time(46,46)Load(0.078) -> 25525 Time(52,52)Load(0.08) -> 14376 Time(54,54)Load(0.081) -> 2878 Time(60,60)Load(0.094) -> 24849 Time(63,63)Load(0.11) -> 21608 Time(66,66)Load(0.114) -> 21122 Time(76,76)Load(0.15) -> depot Time(93,93) & Load(0.15)
+Distance of the route: 48km
+Load of the route: 0.15m^3
+Start time of the route: 0min
+End Time of the route: 93min
+
+Route for vehicle 34:
+depot Time(0,0)Load(0.0) -> 12132 Time(9,9)Load(0.005) -> 19920 Time(14,14)Load(0.008) -> 2428 Time(19,19)Load(0.012) -> 25030 Time(24,24)Load(0.052) -> 5408 Time(35,35)Load(0.058) -> 25539 Time(38,38)Load(0.082) -> 2667 Time(44,44)Load(0.089) -> 22709 Time(48,48)Load(0.093) -> 25921 Time(59,59)Load(0.105) -> 26407 Time(68,68)Load(0.106) -> 9434 Time(76,76)Load(0.108) -> 11926 Time(85,85)Load(0.118) -> 10694 Time(87,87)Load(0.12) -> 2563 Time(90,90)Load(0.123) -> 20813 Time(93,93)Load(0.128) -> 15234 Time(97,97)Load(0.15) -> 15224 Time(99,99)Load(0.166) -> 5471 Time(102,102)Load(0.168) -> 2589 Time(104,104)Load(0.172) -> 22991 Time(107,107)Load(0.195) -> 26049 Time(113,113)Load(0.201) -> 11603 Time(118,118)Load(0.211) -> 10881 Time(123,123)Load(0.302) -> 6047 Time(133,133)Load(0.305) -> 26452 Time(145,145)Load(0.313) -> 24925 Time(152,152)Load(0.369) -> 16599 Time(156,156)Load(0.378) -> depot Time(162,162) & Load(0.378)
+Distance of the route: 67km
+Load of the route: 0.378m^3
+Start time of the route: 0min
+End Time of the route: 162min
+
+Route for vehicle 35:
+depot Time(0,0)Load(0.0) -> 15065 Time(12,12)Load(0.014) -> 2741 Time(15,15)Load(0.021) -> 19687 Time(23,23)Load(0.025) -> 23072 Time(29,29)Load(0.028) -> 2439 Time(32,32)Load(0.031) -> 27245 Time(35,35)Load(0.034) -> 10464 Time(37,37)Load(0.039) -> 4697 Time(42,42)Load(0.04) -> 2641 Time(47,47)Load(0.067) -> 25394 Time(52,52)Load(0.08) -> 17215 Time(54,54)Load(0.102) -> 2823 Time(56,56)Load(0.107) -> 25982 Time(66,66)Load(0.112) -> 15360 Time(68,68)Load(0.128) -> 22833 Time(71,71)Load(0.146) -> 2923 Time(75,75)Load(0.149) -> 11676 Time(84,84)Load(0.303) -> 15179 Time(94,94)Load(0.305) -> 25171 Time(100,100)Load(0.321) -> 4717 Time(105,105)Load(0.326) -> 2886 Time(110,110)Load(0.335) -> 4038 Time(113,113)Load(0.339) -> 2904 Time(117,117)Load(0.343) -> 22775 Time(121,121)Load(0.346) -> 25447 Time(125,125)Load(0.375) -> 2469 Time(131,131)Load(0.407) -> 8748 Time(136,136)Load(0.42) -> 19492 Time(142,142)Load(0.429) -> 25269 Time(145,145)Load(0.445) -> 25524 Time(149,149)Load(0.455) -> 16692 Time(156,156)Load(0.461) -> 23191 Time(165,165)Load(0.471) -> 9496 Time(172,172)Load(0.475) -> depot Time(190,190) & Load(0.475)
+Distance of the route: 70km
+Load of the route: 0.475m^3
+Start time of the route: 0min
+End Time of the route: 190min
+
+Route for vehicle 36:
+depot Time(0,0)Load(0.0) -> 19427 Time(15,15)Load(0.01) -> 25351 Time(19,19)Load(0.013) -> 24435 Time(22,22)Load(0.018) -> 25296 Time(26,26)Load(0.024) -> 24952 Time(33,33)Load(0.03) -> 7918 Time(39,39)Load(0.044) -> 7013 Time(43,43)Load(0.05) -> 6178 Time(45,45)Load(0.055) -> 2510 Time(50,50)Load(0.058) -> 15874 Time(58,58)Load(0.072) -> 25118 Time(63,63)Load(0.119) -> 10211 Time(66,66)Load(0.123) -> 11306 Time(72,72)Load(0.127) -> 8241 Time(75,75)Load(0.14) -> 24973 Time(79,79)Load(0.143) -> 26388 Time(83,83)Load(0.236) -> 2571 Time(87,87)Load(0.238) -> 6222 Time(90,90)Load(0.239) -> 16488 Time(94,94)Load(0.265) -> 2735 Time(101,101)Load(0.279) -> 5899 Time(104,104)Load(0.282) -> 24870 Time(109,109)Load(0.319) -> 24847 Time(114,114)Load(0.32) -> 4003 Time(122,122)Load(0.368) -> 26154 Time(136,136)Load(0.374) -> 26132 Time(139,139)Load(0.392) -> 24889 Time(143,143)Load(0.416) -> 27350 Time(153,153)Load(0.447) -> 24845 Time(155,155)Load(0.452) -> 19602 Time(158,158)Load(0.454) -> 16906 Time(172,172)Load(0.456) -> 23589 Time(179,179)Load(0.462) -> depot Time(190,190) & Load(0.462)
+Distance of the route: 61km
+Load of the route: 0.462m^3
+Start time of the route: 0min
+End Time of the route: 190min
+
+Route for vehicle 37:
+depot Time(0,0)Load(0.0) -> 19346 Time(11,11)Load(0.001) -> 17553 Time(13,13)Load(0.007) -> 6101 Time(17,17)Load(0.012) -> 3864 Time(26,26)Load(0.02) -> 15520 Time(29,29)Load(0.03) -> 25527 Time(39,39)Load(0.043) -> 27253 Time(51,51)Load(0.068) -> 16208 Time(54,54)Load(0.08) -> 15694 Time(56,56)Load(0.085) -> 15811 Time(63,63)Load(0.091) -> 9570 Time(70,70)Load(0.093) -> 2763 Time(74,74)Load(0.099) -> 2793 Time(77,77)Load(0.102) -> 2654 Time(80,80)Load(0.103) -> 2629 Time(83,83)Load(0.109) -> 8836 Time(87,87)Load(0.221) -> 2709 Time(90,90)Load(0.234) -> 22258 Time(94,94)Load(0.24) -> 4030 Time(98,98)Load(0.241) -> 14295 Time(103,103)Load(0.302) -> 19866 Time(110,110)Load(0.321) -> 19221 Time(112,112)Load(0.338) -> 17654 Time(118,118)Load(0.347) -> 15722 Time(121,121)Load(0.358) -> 8573 Time(124,124)Load(0.367) -> 15002 Time(128,128)Load(0.371) -> 23685 Time(132,132)Load(0.385) -> 4804 Time(137,137)Load(0.417) -> 12515 Time(141,141)Load(0.421) -> 9620 Time(143,143)Load(0.43) -> 6311 Time(145,145)Load(0.438) -> 11565 Time(152,152)Load(0.444) -> 2509 Time(154,154)Load(0.465) -> 4659 Time(158,158)Load(0.497) -> 16491 Time(163,163)Load(0.503) -> 12792 Time(169,169)Load(0.511) -> 16278 Time(177,177)Load(0.512) -> depot Time(185,185) & Load(0.512)
+Distance of the route: 41km
+Load of the route: 0.512m^3
+Start time of the route: 0min
+End Time of the route: 185min
+
+Route for vehicle 38:
+depot Time(0,0)Load(0.0) -> 4316 Time(7,7)Load(0.004) -> 16255 Time(11,11)Load(0.007) -> 9444 Time(16,16)Load(0.02) -> 25826 Time(22,22)Load(0.023) -> 12373 Time(24,24)Load(0.062) -> 23125 Time(30,30)Load(0.079) -> 5771 Time(34,34)Load(0.085) -> 25509 Time(40,40)Load(0.088) -> 3562 Time(43,43)Load(0.089) -> 23603 Time(48,48)Load(0.149) -> 11120 Time(51,51)Load(0.173) -> 16774 Time(54,54)Load(0.177) -> 16064 Time(56,56)Load(0.199) -> 11434 Time(58,58)Load(0.222) -> 13110 Time(64,64)Load(0.226) -> 16735 Time(67,67)Load(0.239) -> 15543 Time(70,70)Load(0.247) -> 15763 Time(74,74)Load(0.319) -> 14930 Time(78,78)Load(0.321) -> 9433 Time(82,82)Load(0.324) -> 22607 Time(86,86)Load(0.338) -> 24879 Time(91,91)Load(0.339) -> 15127 Time(94,94)Load(0.347) -> 11117 Time(98,98)Load(0.362) -> 23101 Time(101,101)Load(0.367) -> 17233 Time(106,106)Load(0.398) -> 12802 Time(109,109)Load(0.404) -> 9547 Time(113,113)Load(0.415) -> 6049 Time(117,117)Load(0.418) -> 2868 Time(120,120)Load(0.42) -> 7418 Time(124,124)Load(0.432) -> 14805 Time(128,128)Load(0.433) -> 6806 Time(130,130)Load(0.437) -> 2849 Time(133,133)Load(0.445) -> 4352 Time(137,137)Load(0.455) -> 15845 Time(141,141)Load(0.461) -> 11683 Time(145,145)Load(0.472) -> 4150 Time(148,148)Load(0.478) -> 2803 Time(151,151)Load(0.634) -> 16011 Time(156,156)Load(0.635) -> 24593 Time(160,160)Load(0.647) -> 21178 Time(164,164)Load(0.702) -> 19257 Time(170,170)Load(0.703) -> 25248 Time(174,174)Load(0.719) -> 6712 Time(178,178)Load(0.721) -> depot Time(186,186) & Load(0.721)
+Distance of the route: 23km
+Load of the route: 0.721m^3
+Start time of the route: 0min
+End Time of the route: 186min
+
+Route for vehicle 39:
+depot Time(0,0)Load(0.0) -> 26177 Time(9,9)Load(0.001) -> 25393 Time(23,23)Load(0.002) -> 5324 Time(25,25)Load(0.026) -> 4454 Time(27,27)Load(0.036) -> 2946 Time(30,30)Load(0.049) -> 25758 Time(34,34)Load(0.055) -> 15631 Time(36,36)Load(0.069) -> 5522 Time(43,43)Load(0.073) -> 4491 Time(47,47)Load(0.084) -> 2750 Time(51,51)Load(0.111) -> 23373 Time(55,55)Load(0.113) -> 20818 Time(59,59)Load(0.13) -> 19644 Time(62,62)Load(0.139) -> 16177 Time(64,64)Load(0.163) -> 7990 Time(67,67)Load(0.165) -> 4813 Time(69,69)Load(0.171) -> 2909 Time(73,73)Load(0.186) -> 4578 Time(78,78)Load(0.21) -> 24578 Time(82,82)Load(0.213) -> 22818 Time(84,84)Load(0.217) -> 15926 Time(86,86)Load(0.223) -> 3851 Time(89,89)Load(0.227) -> 2584 Time(92,92)Load(0.235) -> 15409 Time(96,96)Load(0.255) -> 4062 Time(102,102)Load(0.266) -> 9769 Time(106,106)Load(0.27) -> 6650 Time(109,109)Load(0.28) -> 5650 Time(113,113)Load(0.281) -> 4589 Time(117,117)Load(0.297) -> 3377 Time(120,120)Load(0.298) -> 4704 Time(123,123)Load(0.304) -> 2591 Time(125,125)Load(0.347) -> 19584 Time(130,130)Load(0.349) -> 19200 Time(138,138)Load(0.441) -> 23196 Time(140,140)Load(0.447) -> 5970 Time(143,143)Load(0.449) -> 14970 Time(146,146)Load(0.488) -> 16194 Time(150,150)Load(0.536) -> 6362 Time(154,154)Load(0.54) -> 24729 Time(158,158)Load(0.543) -> 15822 Time(161,161)Load(0.546) -> 2760 Time(166,166)Load(0.559) -> 2833 Time(170,170)Load(0.563) -> depot Time(182,182) & Load(0.563)
+Distance of the route: 32km
+Load of the route: 0.563m^3
+Start time of the route: 0min
+End Time of the route: 182min
+
+Route for vehicle 40:
+depot Time(0,0)Load(0.0) -> 2631 Time(7,7)Load(0.005) -> 16215 Time(11,11)Load(0.008) -> 11504 Time(15,15)Load(0.051) -> 14236 Time(19,19)Load(0.064) -> 7107 Time(21,21)Load(0.091) -> 6110 Time(23,23)Load(0.1) -> 11022 Time(27,27)Load(0.11) -> 14775 Time(31,31)Load(0.119) -> 15077 Time(35,35)Load(0.134) -> 17667 Time(39,39)Load(0.143) -> 15897 Time(43,43)Load(0.144) -> 15443 Time(46,46)Load(0.147) -> 14916 Time(49,49)Load(0.151) -> 14801 Time(52,52)Load(0.176) -> 14536 Time(55,55)Load(0.186) -> 16280 Time(59,59)Load(0.204) -> 14971 Time(62,62)Load(0.208) -> 12442 Time(67,67)Load(0.211) -> 10727 Time(71,71)Load(0.213) -> 11756 Time(75,75)Load(0.216) -> 6232 Time(79,79)Load(0.22) -> 5320 Time(84,84)Load(0.225) -> 15764 Time(88,88)Load(0.229) -> 15819 Time(91,91)Load(0.238) -> 2757 Time(96,96)Load(0.275) -> 14547 Time(99,99)Load(0.309) -> 19542 Time(105,105)Load(0.323) -> 4947 Time(110,110)Load(0.325) -> 23906 Time(115,115)Load(0.331) -> 22913 Time(119,119)Load(0.37) -> 27380 Time(124,124)Load(0.374) -> 24802 Time(128,128)Load(0.378) -> 8276 Time(130,130)Load(0.415) -> 5053 Time(134,134)Load(0.452) -> 2698 Time(138,138)Load(0.469) -> 19063 Time(144,144)Load(0.475) -> 27360 Time(149,149)Load(0.55) -> 27346 Time(152,152)Load(0.556) -> 22726 Time(154,154)Load(0.568) -> 17495 Time(158,158)Load(0.569) -> 5590 Time(168,168)Load(0.621) -> 4457 Time(171,171)Load(0.626) -> depot Time(183,183) & Load(0.626)
+Distance of the route: 27km
+Load of the route: 0.626m^3
+Start time of the route: 0min
+End Time of the route: 183min
+
+Route for vehicle 41:
+depot Time(0,0)Load(0.0) -> 4104 Time(17,17)Load(0.006) -> 24875 Time(22,22)Load(0.008) -> 27381 Time(28,28)Load(0.086) -> 14687 Time(33,33)Load(0.111) -> 11312 Time(41,41)Load(0.115) -> 10787 Time(50,50)Load(0.123) -> 25612 Time(58,58)Load(0.141) -> 25239 Time(62,62)Load(0.168) -> 15713 Time(67,67)Load(0.194) -> 25603 Time(70,70)Load(0.211) -> 26721 Time(83,83)Load(0.218) -> 24957 Time(89,89)Load(0.226) -> 5236 Time(98,98)Load(0.229) -> 25950 Time(107,107)Load(0.235) -> 24767 Time(109,109)Load(0.254) -> 17072 Time(114,114)Load(0.259) -> 27520 Time(121,121)Load(0.317) -> 4233 Time(127,127)Load(0.327) -> 15990 Time(131,131)Load(0.332) -> 12163 Time(136,136)Load(0.336) -> 25464 Time(145,145)Load(0.339) -> 10629 Time(147,147)Load(0.352) -> 25265 Time(152,152)Load(0.384) -> 24866 Time(156,156)Load(0.417) -> 15304 Time(158,158)Load(0.422) -> 14794 Time(160,160)Load(0.424) -> 23091 Time(166,166)Load(0.427) -> 16468 Time(168,168)Load(0.43) -> 6065 Time(172,172)Load(0.463) -> 6406 Time(178,178)Load(0.476) -> depot Time(193,193) & Load(0.476)
+Distance of the route: 80km
+Load of the route: 0.476m^3
+Start time of the route: 0min
+End Time of the route: 193min
+
+Route for vehicle 42:
+depot Time(0,0)Load(0.0) -> 23336 Time(7,7)Load(0.001) -> 27289 Time(10,10)Load(0.027) -> 2836 Time(17,17)Load(0.03) -> 7874 Time(26,26)Load(0.05) -> 9486 Time(30,30)Load(0.055) -> 22917 Time(35,35)Load(0.057) -> 27410 Time(38,38)Load(0.068) -> 20959 Time(41,41)Load(0.074) -> 27455 Time(47,47)Load(0.133) -> 19268 Time(50,50)Load(0.139) -> 4017 Time(52,52)Load(0.15) -> 2506 Time(55,55)Load(0.159) -> 19782 Time(62,62)Load(0.192) -> 2694 Time(67,67)Load(0.193) -> 2545 Time(71,71)Load(0.247) -> 14391 Time(74,74)Load(0.256) -> 19001 Time(77,77)Load(0.259) -> 19459 Time(87,87)Load(0.292) -> 14569 Time(97,97)Load(0.295) -> 3808 Time(104,104)Load(0.318) -> 8885 Time(112,112)Load(0.325) -> 9938 Time(123,123)Load(0.339) -> 25526 Time(126,126)Load(0.352) -> 7702 Time(130,130)Load(0.354) -> 6557 Time(134,134)Load(0.356) -> 17174 Time(139,139)Load(0.362) -> 15154 Time(145,145)Load(0.363) -> 23187 Time(148,148)Load(0.368) -> 21078 Time(151,151)Load(0.413) -> 24812 Time(155,155)Load(0.423) -> depot Time(162,162) & Load(0.423)
+Distance of the route: 39km
+Load of the route: 0.423m^3
+Start time of the route: 0min
+End Time of the route: 162min
+
+Route for vehicle 43:
+depot Time(0,0)Load(0.0) -> 15449 Time(7,7)Load(0.002) -> 25403 Time(11,11)Load(0.006) -> 9799 Time(14,14)Load(0.01) -> 10716 Time(21,21)Load(0.026) -> 16028 Time(24,24)Load(0.035) -> 14655 Time(30,30)Load(0.056) -> 16173 Time(33,33)Load(0.062) -> 15555 Time(36,36)Load(0.068) -> 20768 Time(40,40)Load(0.073) -> 15692 Time(44,44)Load(0.104) -> 17699 Time(50,50)Load(0.107) -> 23658 Time(55,55)Load(0.124) -> 16706 Time(58,58)Load(0.131) -> 25518 Time(61,61)Load(0.145) -> 10678 Time(65,65)Load(0.151) -> 6592 Time(68,68)Load(0.156) -> 15900 Time(71,71)Load(0.158) -> 5972 Time(75,75)Load(0.16) -> 14379 Time(82,82)Load(0.172) -> 10159 Time(89,89)Load(0.18) -> 10093 Time(93,93)Load(0.217) -> 2730 Time(102,102)Load(0.227) -> 27467 Time(110,110)Load(0.251) -> 17138 Time(118,118)Load(0.26) -> 24726 Time(124,124)Load(0.346) -> 27332 Time(135,135)Load(0.37) -> 9750 Time(140,140)Load(0.385) -> 19275 Time(146,146)Load(0.44) -> 16039 Time(153,153)Load(0.488) -> 12879 Time(155,155)Load(0.491) -> 9800 Time(163,163)Load(0.498) -> 19921 Time(168,168)Load(0.582) -> 14776 Time(171,171)Load(0.586) -> 2848 Time(177,177)Load(0.619) -> depot Time(198,198) & Load(0.619)
+Distance of the route: 71km
+Load of the route: 0.619m^3
+Start time of the route: 0min
+End Time of the route: 198min
+
+Route for vehicle 44:
+depot Time(0,0)Load(0.0) -> 22511 Time(8,8)Load(0.013) -> 25721 Time(12,12)Load(0.021) -> 25130 Time(16,16)Load(0.026) -> 27287 Time(19,19)Load(0.099) -> 25634 Time(23,23)Load(0.154) -> 25349 Time(26,26)Load(0.169) -> 24842 Time(30,30)Load(0.171) -> 24602 Time(33,33)Load(0.171) -> 23095 Time(36,36)Load(0.199) -> 16609 Time(39,39)Load(0.205) -> 24123 Time(43,43)Load(0.211) -> 24786 Time(49,49)Load(0.226) -> 16598 Time(52,52)Load(0.263) -> 22630 Time(56,56)Load(0.264) -> 17640 Time(59,59)Load(0.275) -> 22347 Time(62,62)Load(0.278) -> 23129 Time(65,65)Load(0.291) -> 7914 Time(69,69)Load(0.295) -> 23018 Time(72,72)Load(0.305) -> 16896 Time(74,74)Load(0.314) -> 4681 Time(78,78)Load(0.347) -> 25165 Time(83,83)Load(0.371) -> 12061 Time(86,86)Load(0.569) -> 24035 Time(90,90)Load(0.582) -> 24642 Time(93,93)Load(0.597) -> 25556 Time(97,97)Load(0.611) -> 25341 Time(100,100)Load(0.624) -> 24677 Time(103,103)Load(0.628) -> 24156 Time(106,106)Load(0.639) -> 23865 Time(108,108)Load(0.645) -> 23341 Time(111,111)Load(0.649) -> 23231 Time(114,114)Load(0.659) -> 22940 Time(116,116)Load(0.664) -> 22343 Time(119,119)Load(0.667) -> 21481 Time(122,122)Load(0.672) -> 19545 Time(125,125)Load(0.675) -> 19178 Time(128,128)Load(0.712) -> 19170 Time(131,131)Load(0.731) -> 17834 Time(135,135)Load(0.737) -> 25336 Time(139,139)Load(0.84) -> 17738 Time(142,142)Load(0.854) -> 24687 Time(145,145)Load(0.876) -> 25376 Time(148,148)Load(1.034) -> 22575 Time(152,152)Load(1.044) -> 25098 Time(156,156)Load(1.057) -> 24158 Time(160,160)Load(1.07) -> 15999 Time(164,164)Load(1.135) -> 15943 Time(168,168)Load(1.137) -> 20975 Time(171,171)Load(1.149) -> 17264 Time(175,175)Load(1.218) -> 27358 Time(180,180)Load(1.264) -> depot Time(189,189) & Load(1.264)
+Distance of the route: 13km
+Load of the route: 1.264m^3
+Start time of the route: 0min
+End Time of the route: 189min
+
+Route for vehicle 45:
+depot Time(0,0)Load(0.0) -> 21409 Time(9,9)Load(0.013) -> 6066 Time(30,30)Load(0.017) -> 7679 Time(53,53)Load(0.052) -> 10194 Time(63,63)Load(0.062) -> 19651 Time(67,67)Load(0.065) -> 14986 Time(69,69)Load(0.069) -> 24352 Time(99,99)Load(0.07) -> 23393 Time(125,125)Load(0.077) -> depot Time(129,129) & Load(0.077)
+Distance of the route: 29km
+Load of the route: 0.077m^3
+Start time of the route: 0min
+End Time of the route: 129min
+
+Route for vehicle 46:
+depot Time(0,0)Load(0.0) -> 10785 Time(7,7)Load(0.009) -> 4721 Time(14,14)Load(0.023) -> 3766 Time(19,19)Load(0.024) -> 4710 Time(24,24)Load(0.041) -> 21469 Time(32,32)Load(0.044) -> 19498 Time(36,36)Load(0.045) -> 25005 Time(40,40)Load(0.051) -> 26448 Time(45,45)Load(0.087) -> 25144 Time(49,49)Load(0.09) -> 22890 Time(58,58)Load(0.106) -> 14893 Time(64,64)Load(0.112) -> 18051 Time(66,66)Load(0.125) -> 26232 Time(69,69)Load(0.128) -> 10265 Time(77,77)Load(0.132) -> 15727 Time(91,91)Load(0.148) -> 23414 Time(93,93)Load(0.154) -> 22649 Time(105,105)Load(0.158) -> 4575 Time(111,111)Load(0.16) -> 25288 Time(115,115)Load(0.175) -> 12207 Time(120,120)Load(0.201) -> 17605 Time(122,122)Load(0.203) -> 27491 Time(126,126)Load(0.207) -> 16120 Time(129,129)Load(0.217) -> 7592 Time(133,133)Load(0.227) -> 22756 Time(138,138)Load(0.242) -> 26071 Time(142,142)Load(0.245) -> 10318 Time(148,148)Load(0.251) -> 25860 Time(151,151)Load(0.301) -> 22111 Time(155,155)Load(0.312) -> 9489 Time(157,157)Load(0.313) -> 19345 Time(164,164)Load(0.321) -> 15886 Time(169,169)Load(0.336) -> 15876 Time(176,176)Load(0.362) -> depot Time(190,190) & Load(0.362)
+Distance of the route: 55km
+Load of the route: 0.362m^3
+Start time of the route: 0min
+End Time of the route: 190min
+
+Route for vehicle 47:
+depot Time(0,0)Load(0.0) -> 11947 Time(9,9)Load(0.006) -> 25476 Time(16,16)Load(0.009) -> 4467 Time(18,18)Load(0.022) -> 3545 Time(27,27)Load(0.043) -> 16995 Time(36,36)Load(0.048) -> 25299 Time(41,41)Load(0.054) -> 19822 Time(45,45)Load(0.138) -> 20944 Time(50,50)Load(0.142) -> 23351 Time(53,53)Load(0.164) -> 24633 Time(57,57)Load(0.188) -> 19141 Time(60,60)Load(0.194) -> 24351 Time(63,63)Load(0.204) -> 16617 Time(66,66)Load(0.217) -> 11237 Time(69,69)Load(0.224) -> 10076 Time(72,72)Load(0.23) -> 12176 Time(75,75)Load(0.235) -> 5774 Time(78,78)Load(0.241) -> 19766 Time(81,81)Load(0.244) -> 19054 Time(84,84)Load(0.304) -> 15887 Time(89,89)Load(0.308) -> 4259 Time(92,92)Load(0.314) -> 2477 Time(95,95)Load(0.32) -> 24561 Time(101,101)Load(0.338) -> 8045 Time(105,105)Load(0.404) -> 25968 Time(123,123)Load(0.417) -> 16101 Time(140,140)Load(0.42) -> 24815 Time(147,147)Load(0.446) -> 24893 Time(152,152)Load(0.451) -> 26178 Time(161,161)Load(0.451) -> 25480 Time(163,163)Load(0.458) -> 24997 Time(167,167)Load(0.46) -> 26660 Time(173,173)Load(0.476) -> 26669 Time(180,180)Load(0.499) -> depot Time(198,198) & Load(0.499)
+Distance of the route: 58km
+Load of the route: 0.499m^3
+Start time of the route: 0min
+End Time of the route: 198min
+
+Route for vehicle 48:
+depot Time(0,0)Load(0.0) -> 22694 Time(14,14)Load(0.01) -> 25243 Time(17,17)Load(0.049) -> 25242 Time(20,20)Load(0.053) -> 25033 Time(24,24)Load(0.205) -> 22074 Time(27,27)Load(0.209) -> 19476 Time(30,30)Load(0.237) -> 12255 Time(33,33)Load(0.244) -> 15657 Time(36,36)Load(0.276) -> 12166 Time(38,38)Load(0.285) -> 4613 Time(42,42)Load(0.318) -> 6382 Time(45,45)Load(0.324) -> 25191 Time(49,49)Load(0.349) -> 7582 Time(52,52)Load(0.355) -> 15917 Time(56,56)Load(0.359) -> 25463 Time(59,59)Load(0.36) -> 25328 Time(61,61)Load(0.415) -> 25311 Time(64,64)Load(0.417) -> 10859 Time(69,69)Load(0.421) -> 5240 Time(75,75)Load(0.427) -> 4783 Time(79,79)Load(0.436) -> 2861 Time(84,84)Load(0.455) -> 2666 Time(88,88)Load(0.458) -> 2577 Time(92,92)Load(0.461) -> 17566 Time(95,95)Load(0.465) -> 23791 Time(99,99)Load(0.468) -> 22568 Time(102,102)Load(0.472) -> 17235 Time(106,106)Load(0.495) -> 25511 Time(110,110)Load(0.545) -> 24532 Time(113,113)Load(0.555) -> 23460 Time(117,117)Load(0.606) -> 24770 Time(120,120)Load(0.623) -> 25241 Time(127,127)Load(0.655) -> 9679 Time(135,135)Load(0.66) -> 15790 Time(140,140)Load(0.674) -> 22026 Time(146,146)Load(0.758) -> 17053 Time(148,148)Load(0.761) -> 11610 Time(156,156)Load(0.795) -> 2598 Time(166,166)Load(0.811) -> 15397 Time(169,169)Load(0.822) -> 2902 Time(174,174)Load(0.828) -> depot Time(201,201) & Load(0.828)
+Distance of the route: 58km
+Load of the route: 0.828m^3
+Start time of the route: 0min
+End Time of the route: 201min
+
+Route for vehicle 49:
+depot Time(0,0)Load(0.0) -> 25942 Time(8,8)Load(0.013) -> 14244 Time(11,11)Load(0.019) -> 5412 Time(15,15)Load(0.029) -> 21052 Time(21,21)Load(0.032) -> 5917 Time(26,26)Load(0.037) -> 17236 Time(33,33)Load(0.047) -> 5858 Time(37,37)Load(0.053) -> 9824 Time(43,43)Load(0.069) -> 6344 Time(51,51)Load(0.082) -> 15385 Time(58,58)Load(0.101) -> 15046 Time(62,62)Load(0.118) -> 23656 Time(70,70)Load(0.128) -> 17478 Time(74,74)Load(0.134) -> 15697 Time(78,78)Load(0.139) -> 25767 Time(82,82)Load(0.143) -> 27552 Time(85,85)Load(0.144) -> 25727 Time(89,89)Load(0.16) -> 2585 Time(93,93)Load(0.163) -> 16035 Time(99,99)Load(0.179) -> depot Time(107,107) & Load(0.179)
+Distance of the route: 34km
+Load of the route: 0.179m^3
+Start time of the route: 0min
+End Time of the route: 107min
+
+Route for vehicle 50:
+depot Time(0,0)Load(0.0) -> 10231 Time(4,4)Load(0.013) -> 25647 Time(7,7)Load(0.019) -> 25470 Time(11,11)Load(0.02) -> 24401 Time(15,15)Load(0.033) -> 19269 Time(18,18)Load(0.039) -> 23985 Time(22,22)Load(0.049) -> 25420 Time(26,26)Load(0.058) -> 25429 Time(29,29)Load(0.059) -> 24713 Time(34,34)Load(0.106) -> 19117 Time(38,38)Load(0.168) -> 18038 Time(41,41)Load(0.185) -> 15854 Time(45,45)Load(0.189) -> 16429 Time(51,51)Load(0.195) -> 9268 Time(55,55)Load(0.203) -> 15220 Time(58,58)Load(0.218) -> 26583 Time(62,62)Load(0.221) -> 5949 Time(67,67)Load(0.222) -> 4103 Time(71,71)Load(0.235) -> 4800 Time(75,75)Load(0.236) -> 5257 Time(80,80)Load(0.242) -> 26554 Time(86,86)Load(0.257) -> 25958 Time(88,88)Load(0.258) -> 27354 Time(91,91)Load(0.292) -> 27195 Time(94,94)Load(0.326) -> 26170 Time(96,96)Load(0.348) -> 25676 Time(101,101)Load(0.359) -> 25251 Time(105,105)Load(0.362) -> 24880 Time(108,108)Load(0.375) -> 24640 Time(112,112)Load(0.381) -> 23172 Time(116,116)Load(0.385) -> 25923 Time(120,120)Load(0.395) -> 24591 Time(124,124)Load(0.406) -> 17169 Time(126,126)Load(0.433) -> 21340 Time(129,129)Load(0.449) -> 27368 Time(132,132)Load(0.629) -> 27194 Time(136,136)Load(0.641) -> 26385 Time(139,139)Load(0.654) -> 26450 Time(143,143)Load(0.654) -> 26123 Time(147,147)Load(0.66) -> 25426 Time(151,151)Load(0.67) -> 26039 Time(155,155)Load(0.676) -> 25882 Time(158,158)Load(0.68) -> 25809 Time(162,162)Load(0.758) -> 25743 Time(165,165)Load(0.764) -> 25657 Time(168,168)Load(0.777) -> 27182 Time(172,172)Load(0.829) -> 25771 Time(176,176)Load(0.833) -> depot Time(190,190) & Load(0.833)
+Distance of the route: 11km
+Load of the route: 0.833m^3
+Start time of the route: 0min
+End Time of the route: 190min
+
+Real objective: 1080245.1
+Number of cars used: 18
+Total distance of all routes: 817km
+Total load of all routes: 9.446m^3
+Total time of all routes: 3128min
+
+---------------------------------------------------
+
+
+---------------------------------------------------
+** Zone2**
+Objective: {3000809}
+
+Route for vehicle 35:
+depot Time(144,144)Load(0.0) -> 2472 Time(180,180)Load(0.028) -> 16892 Time(184,184)Load(0.038) -> 17746 Time(187,187)Load(0.041) -> 15392 Time(190,190)Load(0.055) -> 4601 Time(194,194)Load(0.059) -> 6332 Time(199,199)Load(0.059) -> 15673 Time(206,206)Load(0.063) -> 26144 Time(212,212)Load(0.123) -> 5106 Time(215,215)Load(0.127) -> 11996 Time(220,220)Load(0.128) -> 6091 Time(224,224)Load(0.133) -> 22841 Time(226,226)Load(0.134) -> 7618 Time(230,230)Load(0.14) -> 19656 Time(236,236)Load(0.145) -> 10848 Time(241,241)Load(0.151) -> 25360 Time(244,244)Load(0.184) -> 22608 Time(247,247)Load(0.191) -> 10032 Time(255,255)Load(0.194) -> 19992 Time(268,268)Load(0.2) -> 24553 Time(280,280)Load(0.2) -> 26186 Time(316,316)Load(0.204) -> 15635 Time(342,342)Load(0.293) -> 6471 Time(346,346)Load(0.295) -> depot Time(364,364) & Load(0.295)
+Distance of the route: 62km
+Load of the route: 0.295m^3
+Start time of the route: 144min
+End Time of the route: 364min
+
+Route for vehicle 36:
+depot Time(143,143)Load(0.0) -> 3652 Time(180,180)Load(0.017) -> 10860 Time(187,187)Load(0.03) -> 18986 Time(192,192)Load(0.178) -> 5192 Time(196,196)Load(0.192) -> 25466 Time(201,201)Load(0.196) -> 3941 Time(210,210)Load(0.202) -> 10498 Time(216,216)Load(0.21) -> 21173 Time(219,219)Load(0.212) -> 24073 Time(223,223)Load(0.219) -> 3591 Time(229,229)Load(0.243) -> 21449 Time(238,238)Load(0.247) -> 25421 Time(241,241)Load(0.248) -> 11092 Time(252,252)Load(0.269) -> 24892 Time(260,260)Load(0.274) -> 24790 Time(266,266)Load(0.279) -> 14333 Time(271,271)Load(0.299) -> 12044 Time(274,274)Load(0.309) -> 27466 Time(280,280)Load(0.312) -> 2922 Time(291,291)Load(0.325) -> 26356 Time(298,298)Load(0.336) -> 5586 Time(307,307)Load(0.345) -> 15797 Time(311,311)Load(0.414) -> 2525 Time(315,315)Load(0.427) -> 15434 Time(318,318)Load(0.481) -> 2600 Time(322,322)Load(0.488) -> 2590 Time(325,325)Load(0.51) -> 6136 Time(328,328)Load(0.512) -> 15377 Time(332,332)Load(0.513) -> 19493 Time(336,336)Load(0.567) -> 25249 Time(339,339)Load(0.568) -> 16325 Time(342,342)Load(0.581) -> 25632 Time(346,346)Load(0.594) -> 14719 Time(350,350)Load(0.627) -> 27525 Time(355,355)Load(0.63) -> 15882 Time(359,359)Load(0.646) -> depot Time(368,368) & Load(0.646)
+Distance of the route: 58km
+Load of the route: 0.646m^3
+Start time of the route: 143min
+End Time of the route: 368min
+
+Route for vehicle 37:
+depot Time(138,138)Load(0.0) -> 11135 Time(180,180)Load(0.004) -> 19155 Time(183,183)Load(0.01) -> 6809 Time(187,187)Load(0.013) -> 15569 Time(192,192)Load(0.017) -> 19458 Time(200,200)Load(0.021) -> 27473 Time(207,207)Load(0.035) -> 12137 Time(211,211)Load(0.044) -> 2512 Time(215,215)Load(0.061) -> 19760 Time(218,218)Load(0.071) -> 14502 Time(222,222)Load(0.075) -> 2471 Time(227,227)Load(0.089) -> 19689 Time(233,233)Load(0.093) -> 21419 Time(244,244)Load(0.126) -> 9966 Time(249,249)Load(0.135) -> 14878 Time(253,253)Load(0.139) -> 12465 Time(257,257)Load(0.145) -> 11937 Time(262,262)Load(0.155) -> 7193 Time(265,265)Load(0.156) -> 4264 Time(267,267)Load(0.17) -> 27320 Time(272,272)Load(0.173) -> 19450 Time(276,276)Load(0.176) -> 15163 Time(279,279)Load(0.179) -> 4237 Time(281,281)Load(0.182) -> 25562 Time(287,287)Load(0.191) -> 25471 Time(293,293)Load(0.197) -> 24052 Time(295,295)Load(0.197) -> 17989 Time(298,298)Load(0.201) -> 25320 Time(302,302)Load(0.204) -> 17536 Time(308,308)Load(0.219) -> 24595 Time(312,312)Load(0.244) -> 8286 Time(318,318)Load(0.261) -> 2562 Time(321,321)Load(0.271) -> 10212 Time(324,324)Load(0.287) -> 2609 Time(326,326)Load(0.29) -> 2884 Time(330,330)Load(0.296) -> 2882 Time(334,334)Load(0.302) -> depot Time(344,344) & Load(0.302)
+Distance of the route: 36km
+Load of the route: 0.302m^3
+Start time of the route: 138min
+End Time of the route: 344min
+
+Route for vehicle 38:
+depot Time(140,140)Load(0.0) -> 21544 Time(180,180)Load(0.003) -> 2722 Time(183,183)Load(0.006) -> 16168 Time(192,192)Load(0.024) -> 24800 Time(199,199)Load(0.056) -> 16164 Time(202,202)Load(0.104) -> 19176 Time(208,208)Load(0.108) -> 16355 Time(222,222)Load(0.112) -> 22278 Time(226,226)Load(0.177) -> 17631 Time(228,228)Load(0.212) -> 2936 Time(232,232)Load(0.231) -> 15719 Time(235,235)Load(0.326) -> 2458 Time(242,242)Load(0.345) -> 11276 Time(245,245)Load(0.35) -> 15894 Time(250,250)Load(0.355) -> 26086 Time(258,258)Load(0.391) -> 2523 Time(268,268)Load(0.395) -> 15993 Time(278,278)Load(0.408) -> 7577 Time(285,285)Load(0.492) -> 4775 Time(292,292)Load(0.576) -> 6000 Time(296,296)Load(0.58) -> 25358 Time(300,300)Load(0.582) -> 15985 Time(303,303)Load(0.588) -> 4251 Time(306,306)Load(0.606) -> 23647 Time(311,311)Load(0.609) -> 22653 Time(314,314)Load(0.627) -> 19239 Time(317,317)Load(0.63) -> 19233 Time(321,321)Load(0.633) -> 19079 Time(323,323)Load(0.643) -> 16034 Time(327,327)Load(0.65) -> 15796 Time(331,331)Load(0.651) -> 3427 Time(335,335)Load(0.656) -> 11698 Time(341,341)Load(0.657) -> 2566 Time(345,345)Load(0.66) -> 6629 Time(348,348)Load(0.743) -> 7037 Time(352,352)Load(0.786) -> 9972 Time(355,355)Load(0.801) -> 12326 Time(359,359)Load(0.826) -> depot Time(373,373) & Load(0.826)
+Distance of the route: 66km
+Load of the route: 0.826m^3
+Start time of the route: 140min
+End Time of the route: 373min
+
+Route for vehicle 39:
+depot Time(141,141)Load(0.0) -> 26242 Time(180,180)Load(0.002) -> 11018 Time(194,194)Load(0.008) -> 6443 Time(201,201)Load(0.021) -> 17166 Time(206,206)Load(0.031) -> 4807 Time(214,214)Load(0.034) -> 2580 Time(218,218)Load(0.072) -> 2448 Time(224,224)Load(0.075) -> 2559 Time(232,232)Load(0.153) -> 27547 Time(242,242)Load(0.206) -> 4004 Time(248,248)Load(0.209) -> 2607 Time(254,254)Load(0.22) -> 23981 Time(258,258)Load(0.222) -> 17362 Time(263,263)Load(0.223) -> 15730 Time(266,266)Load(0.225) -> 14866 Time(269,269)Load(0.229) -> 10413 Time(273,273)Load(0.237) -> 24026 Time(276,276)Load(0.28) -> 2853 Time(279,279)Load(0.286) -> 25262 Time(285,285)Load(0.295) -> 26503 Time(292,292)Load(0.349) -> 16814 Time(303,303)Load(0.352) -> 24614 Time(312,312)Load(0.369) -> 4463 Time(315,315)Load(0.379) -> 24551 Time(319,319)Load(0.391) -> 25234 Time(324,324)Load(0.472) -> 25875 Time(327,327)Load(0.504) -> 22868 Time(330,330)Load(0.518) -> 21147 Time(334,334)Load(0.531) -> 24507 Time(337,337)Load(0.563) -> 23827 Time(341,341)Load(0.566) -> 20068 Time(344,344)Load(0.579) -> 22225 Time(348,348)Load(0.58) -> 26360 Time(359,359)Load(0.583) -> depot Time(375,375) & Load(0.583)
+Distance of the route: 67km
+Load of the route: 0.583m^3
+Start time of the route: 141min
+End Time of the route: 375min
+
+Route for vehicle 40:
+depot Time(143,143)Load(0.0) -> 24438 Time(180,180)Load(0.005) -> 23506 Time(183,183)Load(0.023) -> 21997 Time(187,187)Load(0.139) -> 23640 Time(191,191)Load(0.163) -> 17094 Time(195,195)Load(0.172) -> 12722 Time(199,199)Load(0.183) -> 12038 Time(203,203)Load(0.188) -> 19134 Time(206,206)Load(0.24) -> 19034 Time(210,210)Load(0.242) -> 16307 Time(214,214)Load(0.252) -> 16046 Time(217,217)Load(0.281) -> 17585 Time(221,221)Load(0.287) -> 19003 Time(224,224)Load(0.36) -> 2785 Time(227,227)Load(0.364) -> 17608 Time(231,231)Load(0.369) -> 7066 Time(235,235)Load(0.375) -> 10979 Time(238,238)Load(0.381) -> 14953 Time(242,242)Load(0.386) -> 16002 Time(245,245)Load(0.408) -> 23426 Time(249,249)Load(0.412) -> 19306 Time(252,252)Load(0.526) -> 15275 Time(255,255)Load(0.549) -> 11988 Time(259,259)Load(0.549) -> 10957 Time(263,263)Load(0.551) -> 6184 Time(267,267)Load(0.585) -> 5349 Time(271,271)Load(0.591) -> 4593 Time(275,275)Load(0.604) -> 24813 Time(279,279)Load(0.618) -> 17617 Time(283,283)Load(0.637) -> 17007 Time(285,285)Load(0.639) -> 2500 Time(289,289)Load(0.645) -> 16918 Time(293,293)Load(0.647) -> 16395 Time(297,297)Load(0.684) -> 15826 Time(301,301)Load(0.69) -> 24976 Time(304,304)Load(0.696) -> 22410 Time(308,308)Load(0.7) -> 15145 Time(312,312)Load(0.71) -> 10110 Time(315,315)Load(0.723) -> 11813 Time(318,318)Load(0.725) -> 11185 Time(322,322)Load(0.729) -> 10564 Time(325,325)Load(0.732) -> 14448 Time(328,328)Load(1.027) -> 14618 Time(332,332)Load(1.03) -> 11189 Time(336,336)Load(1.031) -> 5382 Time(340,340)Load(1.034) -> 4701 Time(344,344)Load(1.058) -> 2514 Time(348,348)Load(1.068) -> depot Time(360,360) & Load(1.068)
+Distance of the route: 11km
+Load of the route: 1.068m^3
+Start time of the route: 143min
+End Time of the route: 360min
+
+Route for vehicle 41:
+depot Time(142,142)Load(0.0) -> 14843 Time(180,180)Load(0.002) -> 24772 Time(183,183)Load(0.026) -> 5699 Time(185,185)Load(0.028) -> 2462 Time(187,187)Load(0.031) -> 3515 Time(192,192)Load(0.033) -> 15486 Time(199,199)Load(0.043) -> 25915 Time(204,204)Load(0.052) -> 11802 Time(208,208)Load(0.08) -> 5816 Time(211,211)Load(0.088) -> 23060 Time(216,216)Load(0.094) -> 17083 Time(221,221)Load(0.096) -> 8231 Time(224,224)Load(0.098) -> 15552 Time(226,226)Load(0.107) -> 23259 Time(231,231)Load(0.139) -> 19672 Time(236,236)Load(0.162) -> 9863 Time(242,242)Load(0.163) -> 19418 Time(248,248)Load(0.173) -> 23098 Time(251,251)Load(0.177) -> 8137 Time(253,253)Load(0.19) -> 11136 Time(256,256)Load(0.198) -> 25838 Time(262,262)Load(0.208) -> 26218 Time(270,270)Load(0.222) -> 25250 Time(273,273)Load(0.223) -> 21636 Time(281,281)Load(0.225) -> 19771 Time(287,287)Load(0.229) -> 15702 Time(289,289)Load(0.25) -> 16497 Time(293,293)Load(0.253) -> 18921 Time(298,298)Load(0.263) -> 25446 Time(303,303)Load(0.266) -> 19553 Time(308,308)Load(0.3) -> 25988 Time(312,312)Load(0.304) -> 15739 Time(315,315)Load(0.307) -> 14461 Time(319,319)Load(0.309) -> 23513 Time(323,323)Load(0.315) -> 12415 Time(326,326)Load(0.326) -> 6802 Time(330,330)Load(0.343) -> 16867 Time(334,334)Load(0.347) -> 8144 Time(339,339)Load(0.354) -> 7699 Time(345,345)Load(0.356) -> 8140 Time(359,359)Load(0.373) -> depot Time(371,371) & Load(0.373)
+Distance of the route: 67km
+Load of the route: 0.373m^3
+Start time of the route: 142min
+End Time of the route: 371min
+
+Route for vehicle 42:
+depot Time(142,142)Load(0.0) -> 27239 Time(180,180)Load(0.077) -> 5502 Time(186,186)Load(0.083) -> 24653 Time(188,188)Load(0.087) -> 22814 Time(193,193)Load(0.104) -> 4058 Time(198,198)Load(0.117) -> 22316 Time(204,204)Load(0.124) -> 20038 Time(207,207)Load(0.133) -> 22714 Time(212,212)Load(0.181) -> 3679 Time(215,215)Load(0.184) -> 23952 Time(238,238)Load(0.232) -> 21897 Time(256,256)Load(0.24) -> 2670 Time(261,261)Load(0.253) -> 9851 Time(271,271)Load(0.256) -> 12203 Time(274,274)Load(0.258) -> 16486 Time(281,281)Load(0.276) -> 25273 Time(284,284)Load(0.289) -> 27357 Time(293,293)Load(0.292) -> 19456 Time(301,301)Load(0.309) -> 7805 Time(312,312)Load(0.325) -> 24779 Time(320,320)Load(0.331) -> 6525 Time(326,326)Load(0.332) -> 22382 Time(330,330)Load(0.338) -> 23553 Time(337,337)Load(0.374) -> 5475 Time(347,347)Load(0.381) -> 17078 Time(351,351)Load(0.383) -> 22983 Time(357,357)Load(0.387) -> 2508 Time(360,360)Load(0.412) -> depot Time(377,377) & Load(0.412)
+Distance of the route: 63km
+Load of the route: 0.412m^3
+Start time of the route: 142min
+End Time of the route: 377min
+
+Route for vehicle 43:
+depot Time(133,133)Load(0.0) -> 4368 Time(180,180)Load(0.023) -> 22498 Time(182,182)Load(0.036) -> 15731 Time(185,185)Load(0.052) -> 17494 Time(191,191)Load(0.054) -> 26209 Time(194,194)Load(0.059) -> 16094 Time(201,201)Load(0.065) -> 16482 Time(212,212)Load(0.083) -> 6055 Time(217,217)Load(0.089) -> 25691 Time(222,222)Load(0.111) -> 12953 Time(230,230)Load(0.128) -> 9519 Time(234,234)Load(0.151) -> 24513 Time(240,240)Load(0.158) -> 15655 Time(242,242)Load(0.182) -> 15620 Time(244,244)Load(0.183) -> 16187 Time(247,247)Load(0.186) -> 25020 Time(250,250)Load(0.204) -> 6312 Time(253,253)Load(0.207) -> 2846 Time(259,259)Load(0.261) -> 18027 Time(263,263)Load(0.287) -> 12422 Time(270,270)Load(0.293) -> 22878 Time(274,274)Load(0.354) -> 25866 Time(279,279)Load(0.364) -> 14856 Time(286,286)Load(0.418) -> 26322 Time(291,291)Load(0.452) -> 2711 Time(295,295)Load(0.465) -> 16350 Time(299,299)Load(0.475) -> 14577 Time(301,301)Load(0.489) -> 21453 Time(306,306)Load(0.489) -> 25208 Time(312,312)Load(0.493) -> 4577 Time(317,317)Load(0.503) -> 27159 Time(320,320)Load(0.572) -> 9747 Time(323,323)Load(0.576) -> 2395 Time(327,327)Load(0.582) -> 16425 Time(331,331)Load(0.592) -> 16604 Time(337,337)Load(0.601) -> 3833 Time(350,350)Load(0.606) -> depot Time(362,362) & Load(0.606)
+Distance of the route: 64km
+Load of the route: 0.606m^3
+Start time of the route: 133min
+End Time of the route: 362min
+
+Route for vehicle 44:
+depot Time(142,142)Load(0.0) -> 23041 Time(180,180)Load(0.01) -> 27291 Time(183,183)Load(0.015) -> 24740 Time(188,188)Load(0.019) -> 19407 Time(191,191)Load(0.031) -> 26053 Time(199,199)Load(0.04) -> 15318 Time(207,207)Load(0.045) -> 25976 Time(210,210)Load(0.054) -> 9720 Time(213,213)Load(0.067) -> 26348 Time(217,217)Load(0.09) -> 25117 Time(223,223)Load(0.092) -> 17417 Time(230,230)Load(0.176) -> 9572 Time(234,234)Load(0.18) -> 25565 Time(241,241)Load(0.185) -> 4887 Time(248,248)Load(0.187) -> 25651 Time(254,254)Load(0.199) -> 16221 Time(256,256)Load(0.212) -> 17123 Time(262,262)Load(0.216) -> 4707 Time(269,269)Load(0.218) -> 15121 Time(275,275)Load(0.224) -> 2489 Time(279,279)Load(0.228) -> 18920 Time(284,284)Load(0.28) -> 25762 Time(292,292)Load(0.286) -> 16757 Time(294,294)Load(0.287) -> 16132 Time(297,297)Load(0.293) -> 25596 Time(301,301)Load(0.298) -> 2573 Time(303,303)Load(0.312) -> 5767 Time(306,306)Load(0.315) -> 27237 Time(316,316)Load(0.329) -> 25432 Time(325,325)Load(0.331) -> 19573 Time(328,328)Load(0.349) -> 23369 Time(333,333)Load(0.359) -> 19053 Time(342,342)Load(0.369) -> 6371 Time(348,348)Load(0.375) -> depot Time(380,380) & Load(0.375)
+Distance of the route: 80km
+Load of the route: 0.375m^3
+Start time of the route: 142min
+End Time of the route: 380min
+
+Route for vehicle 45:
+depot Time(139,139)Load(0.0) -> 15841 Time(180,180)Load(0.021) -> 16161 Time(183,183)Load(0.077) -> 4047 Time(186,186)Load(0.081) -> 25166 Time(189,189)Load(0.087) -> 22629 Time(193,193)Load(0.101) -> 23076 Time(196,196)Load(0.115) -> 21463 Time(200,200)Load(0.117) -> 15959 Time(209,209)Load(0.142) -> 7868 Time(219,219)Load(0.149) -> 25078 Time(225,225)Load(0.162) -> 11210 Time(230,230)Load(0.194) -> 17110 Time(236,236)Load(0.212) -> 24856 Time(245,245)Load(0.216) -> 2542 Time(249,249)Load(0.225) -> 14555 Time(255,255)Load(0.238) -> 17789 Time(269,269)Load(0.252) -> 2478 Time(271,271)Load(0.252) -> 15235 Time(277,277)Load(0.253) -> 21531 Time(281,281)Load(0.264) -> 10071 Time(289,289)Load(0.296) -> 27396 Time(296,296)Load(0.314) -> 9548 Time(302,302)Load(0.318) -> 15699 Time(311,311)Load(0.344) -> 19392 Time(315,315)Load(0.35) -> 27521 Time(324,324)Load(0.356) -> 19174 Time(330,330)Load(0.36) -> 27345 Time(332,332)Load(0.388) -> 12168 Time(335,335)Load(0.39) -> 15853 Time(337,337)Load(0.422) -> 10496 Time(340,340)Load(0.426) -> 11160 Time(344,344)Load(0.427) -> 4075 Time(347,347)Load(0.46) -> 15737 Time(351,351)Load(0.466) -> 9090 Time(356,356)Load(0.47) -> 15124 Time(359,359)Load(0.473) -> depot Time(371,371) & Load(0.473)
+Distance of the route: 72km
+Load of the route: 0.473m^3
+Start time of the route: 139min
+End Time of the route: 371min
+
+Route for vehicle 46:
+depot Time(143,143)Load(0.0) -> 27347 Time(180,180)Load(0.003) -> 25235 Time(183,183)Load(0.009) -> 6429 Time(186,186)Load(0.037) -> 19806 Time(190,190)Load(0.106) -> 25355 Time(194,194)Load(0.109) -> 16856 Time(198,198)Load(0.111) -> 15885 Time(200,200)Load(0.195) -> 25867 Time(207,207)Load(0.199) -> 27452 Time(210,210)Load(0.226) -> 17161 Time(217,217)Load(0.236) -> 17159 Time(222,222)Load(0.247) -> 24783 Time(228,228)Load(0.25) -> 19537 Time(230,230)Load(0.251) -> 2633 Time(234,234)Load(0.27) -> 26289 Time(238,238)Load(0.272) -> 26277 Time(241,241)Load(0.3) -> 23698 Time(243,243)Load(0.3) -> 17077 Time(246,246)Load(0.331) -> 7847 Time(249,249)Load(0.335) -> 2594 Time(252,252)Load(0.371) -> 24476 Time(256,256)Load(0.387) -> 16503 Time(258,258)Load(0.392) -> 25618 Time(264,264)Load(0.405) -> 16819 Time(268,268)Load(0.409) -> 19184 Time(271,271)Load(0.468) -> 4475 Time(274,274)Load(0.498) -> 16047 Time(278,278)Load(0.499) -> 25980 Time(283,283)Load(0.513) -> 24526 Time(286,286)Load(0.518) -> 24646 Time(289,289)Load(0.536) -> 8028 Time(293,293)Load(0.56) -> 25842 Time(301,301)Load(0.563) -> 16210 Time(305,305)Load(0.586) -> 2544 Time(321,321)Load(0.599) -> 15877 Time(336,336)Load(0.613) -> 26329 Time(341,341)Load(0.622) -> 2441 Time(350,350)Load(0.625) -> 25408 Time(354,354)Load(0.629) -> 15498 Time(356,356)Load(0.631) -> depot Time(362,362) & Load(0.631)
+Distance of the route: 37km
+Load of the route: 0.631m^3
+Start time of the route: 143min
+End Time of the route: 362min
+
+Route for vehicle 47:
+depot Time(141,141)Load(0.0) -> 15191 Time(180,180)Load(0.009) -> 22234 Time(184,184)Load(0.013) -> 24670 Time(188,188)Load(0.015) -> 24695 Time(192,192)Load(0.02) -> 24623 Time(197,197)Load(0.025) -> 18999 Time(201,201)Load(0.049) -> 22705 Time(205,205)Load(0.055) -> 2738 Time(209,209)Load(0.07) -> 2533 Time(213,213)Load(0.084) -> 2513 Time(217,217)Load(0.086) -> 19698 Time(221,221)Load(0.092) -> 19575 Time(225,225)Load(0.096) -> 19388 Time(230,230)Load(0.099) -> 22337 Time(234,234)Load(0.105) -> 22451 Time(237,237)Load(0.118) -> 21025 Time(240,240)Load(0.122) -> 19062 Time(244,244)Load(0.123) -> 17712 Time(248,248)Load(0.213) -> 17678 Time(251,251)Load(0.249) -> 17265 Time(254,254)Load(0.265) -> 24572 Time(258,258)Load(0.289) -> 25774 Time(262,262)Load(0.305) -> 10376 Time(266,266)Load(0.439) -> 21884 Time(269,269)Load(0.448) -> 16714 Time(273,273)Load(0.45) -> 15533 Time(276,276)Load(0.462) -> 16102 Time(280,280)Load(0.464) -> 15962 Time(284,284)Load(0.465) -> 11914 Time(288,288)Load(0.469) -> 15034 Time(291,291)Load(0.495) -> 15930 Time(295,295)Load(0.496) -> 12355 Time(298,298)Load(0.503) -> 11942 Time(301,301)Load(0.535) -> 10794 Time(304,304)Load(0.537) -> 3547 Time(308,308)Load(0.54) -> 6631 Time(311,311)Load(0.543) -> 16925 Time(314,314)Load(0.551) -> 17092 Time(317,317)Load(0.556) -> 16914 Time(320,320)Load(0.562) -> 16899 Time(323,323)Load(0.563) -> 12218 Time(327,327)Load(0.566) -> 12764 Time(330,330)Load(0.566) -> 2873 Time(333,333)Load(0.589) -> 19245 Time(336,336)Load(0.593) -> 6283 Time(340,340)Load(0.61) -> 6001 Time(344,344)Load(0.613) -> 11588 Time(348,348)Load(0.641) -> 2648 Time(352,352)Load(0.66) -> 16351 Time(355,355)Load(0.664) -> 16190 Time(357,357)Load(0.67) -> depot Time(371,371) & Load(0.67)
+Distance of the route: 12km
+Load of the route: 0.67m^3
+Start time of the route: 141min
+End Time of the route: 371min
+
+Route for vehicle 48:
+depot Time(136,136)Load(0.0) -> 23255 Time(180,180)Load(0.017) -> 23004 Time(183,183)Load(0.018) -> 24133 Time(189,189)Load(0.046) -> 5103 Time(193,193)Load(0.05) -> 25391 Time(197,197)Load(0.053) -> 12046 Time(201,201)Load(0.055) -> 25505 Time(204,204)Load(0.064) -> 11257 Time(207,207)Load(0.07) -> 2455 Time(211,211)Load(0.076) -> 10865 Time(217,217)Load(0.154) -> 26048 Time(225,225)Load(0.161) -> 25704 Time(229,229)Load(0.195) -> 27323 Time(232,232)Load(0.25) -> 26422 Time(236,236)Load(0.276) -> 23889 Time(239,239)Load(0.284) -> 25554 Time(243,243)Load(0.288) -> 25128 Time(246,246)Load(0.297) -> 24686 Time(250,250)Load(0.3) -> 23315 Time(254,254)Load(0.539) -> 23036 Time(258,258)Load(0.545) -> 19753 Time(262,262)Load(0.564) -> 19703 Time(266,266)Load(0.575) -> 16533 Time(270,270)Load(0.581) -> 2461 Time(274,274)Load(0.584) -> 25343 Time(278,278)Load(0.592) -> 27348 Time(281,281)Load(0.615) -> 15627 Time(285,285)Load(0.628) -> 15416 Time(289,289)Load(0.641) -> 15222 Time(293,293)Load(0.645) -> 22686 Time(296,296)Load(0.659) -> 24924 Time(300,300)Load(0.67) -> 25544 Time(304,304)Load(0.673) -> 25150 Time(307,307)Load(0.691) -> 24429 Time(309,309)Load(0.701) -> 21652 Time(312,312)Load(0.705) -> 24128 Time(316,316)Load(0.708) -> 25533 Time(320,320)Load(0.711) -> 24337 Time(322,322)Load(0.716) -> 21526 Time(324,324)Load(0.737) -> 17759 Time(327,327)Load(0.745) -> 16596 Time(331,331)Load(0.751) -> 16021 Time(334,334)Load(0.761) -> 23694 Time(338,338)Load(0.777) -> 26644 Time(341,341)Load(0.778) -> 21374 Time(343,343)Load(0.793) -> 24749 Time(347,347)Load(0.798) -> 17014 Time(350,350)Load(0.807) -> 26162 Time(353,353)Load(0.807) -> 26759 Time(359,359)Load(0.809) -> depot Time(368,368) & Load(0.809)
+Distance of the route: 17km
+Load of the route: 0.809m^3
+Start time of the route: 136min
+End Time of the route: 368min
+
+Route for vehicle 50:
+depot Time(146,146)Load(0.0) -> 12195 Time(180,180)Load(0.013) -> 5004 Time(185,185)Load(0.018) -> 20748 Time(189,189)Load(0.022) -> 10506 Time(195,195)Load(0.044) -> 26021 Time(200,200)Load(0.076) -> 8082 Time(204,204)Load(0.087) -> 26157 Time(208,208)Load(0.089) -> 16481 Time(212,212)Load(0.102) -> 26663 Time(216,216)Load(0.105) -> 27509 Time(220,220)Load(0.11) -> 26580 Time(222,222)Load(0.135) -> 25519 Time(226,226)Load(0.139) -> 25881 Time(230,230)Load(0.142) -> 25845 Time(233,233)Load(0.196) -> 19585 Time(237,237)Load(0.198) -> 27462 Time(242,242)Load(0.2) -> 26139 Time(246,246)Load(0.224) -> 26493 Time(250,250)Load(0.24) -> 25713 Time(253,253)Load(0.243) -> 27256 Time(256,256)Load(0.28) -> 27180 Time(259,259)Load(0.291) -> 26150 Time(262,262)Load(0.295) -> 25813 Time(265,265)Load(0.311) -> 25793 Time(268,268)Load(0.32) -> 25739 Time(271,271)Load(0.324) -> 25658 Time(274,274)Load(0.333) -> 27524 Time(278,278)Load(0.404) -> 25598 Time(281,281)Load(0.436) -> 25547 Time(285,285)Load(0.486) -> 25578 Time(289,289)Load(0.489) -> 25237 Time(293,293)Load(0.495) -> 25291 Time(296,296)Load(0.508) -> 25314 Time(299,299)Load(0.518) -> 25245 Time(303,303)Load(0.53) -> 2564 Time(307,307)Load(0.532) -> 25112 Time(310,310)Load(0.537) -> 25016 Time(313,313)Load(0.541) -> 25202 Time(317,317)Load(0.542) -> 23141 Time(321,321)Load(0.556) -> 25038 Time(324,324)Load(0.561) -> 25203 Time(328,328)Load(0.571) -> 25227 Time(332,332)Load(0.575) -> 24634 Time(336,336)Load(0.579) -> 23121 Time(339,339)Load(0.585) -> 22889 Time(343,343)Load(0.589) -> 23437 Time(346,346)Load(0.595) -> 22791 Time(349,349)Load(0.676) -> 22660 Time(352,352)Load(0.681) -> depot Time(366,366) & Load(0.681)
+Distance of the route: 17km
+Load of the route: 0.681m^3
+Start time of the route: 146min
+End Time of the route: 366min
+
+Real objective: 900218.7
+Number of cars used: 15
+Total distance of all routes: 729km
+Total load of all routes: 8.749m^3
+Total time of all routes: 5512min
+
+---------------------------------------------------
+
+
+---------------------------------------------------
+** Zone3**
+Objective: {3400924}
+
+Route for vehicle 32:
+depot Time(319,319)Load(0.0) -> 25779 Time(360,360)Load(0.002) -> 23636 Time(385,385)Load(0.003) -> 19814 Time(400,400)Load(0.017) -> 3993 Time(410,410)Load(0.025) -> 22184 Time(430,430)Load(0.041) -> 9577 Time(442,442)Load(0.057) -> 5249 Time(448,448)Load(0.058) -> 15150 Time(452,452)Load(0.08) -> depot Time(466,466) & Load(0.08)
+Distance of the route: 80km
+Load of the route: 0.08m^3
+Start time of the route: 319min
+End Time of the route: 466min
+
+Route for vehicle 34:
+depot Time(319,319)Load(0.0) -> 27409 Time(360,360)Load(0.003) -> 6991 Time(371,371)Load(0.03) -> 18965 Time(382,382)Load(0.033) -> 23781 Time(385,385)Load(0.043) -> 24840 Time(388,388)Load(0.045) -> 11026 Time(390,390)Load(0.046) -> 25152 Time(393,393)Load(0.087) -> 2657 Time(396,396)Load(0.093) -> 16905 Time(425,425)Load(0.111) -> 14717 Time(452,452)Load(0.144) -> 5297 Time(455,455)Load(0.199) -> 22721 Time(459,459)Load(0.223) -> 7388 Time(462,462)Load(0.303) -> 6398 Time(468,468)Load(0.306) -> 27506 Time(472,472)Load(0.325) -> 19026 Time(476,476)Load(0.326) -> 16154 Time(479,479)Load(0.339) -> 15685 Time(481,481)Load(0.342) -> 15005 Time(484,484)Load(0.351) -> 11506 Time(489,489)Load(0.39) -> 25949 Time(492,492)Load(0.403) -> 25454 Time(497,497)Load(0.404) -> 25614 Time(503,503)Load(0.413) -> 27344 Time(507,507)Load(0.462) -> 15880 Time(511,511)Load(0.482) -> 12165 Time(514,514)Load(0.495) -> 12143 Time(517,517)Load(0.508) -> 6636 Time(520,520)Load(0.51) -> 9301 Time(524,524)Load(0.52) -> 26395 Time(528,528)Load(0.542) -> 13021 Time(540,540)Load(0.548) -> depot Time(548,548) & Load(0.548)
+Distance of the route: 57km
+Load of the route: 0.548m^3
+Start time of the route: 319min
+End Time of the route: 548min
+
+Route for vehicle 35:
+depot Time(321,321)Load(0.0) -> 15172 Time(360,360)Load(0.004) -> 18979 Time(362,362)Load(0.091) -> 14718 Time(365,365)Load(0.097) -> 25319 Time(370,370)Load(0.11) -> 7919 Time(374,374)Load(0.12) -> 24983 Time(377,377)Load(0.121) -> 16049 Time(383,383)Load(0.127) -> 4343 Time(387,387)Load(0.128) -> 26351 Time(393,393)Load(0.133) -> 25178 Time(399,399)Load(0.142) -> 24630 Time(403,403)Load(0.185) -> 15980 Time(406,406)Load(0.222) -> 15741 Time(409,409)Load(0.268) -> 26321 Time(413,413)Load(0.271) -> 16339 Time(415,415)Load(0.278) -> 10289 Time(417,417)Load(0.279) -> 22884 Time(421,421)Load(0.282) -> 18970 Time(424,424)Load(0.306) -> 19529 Time(431,431)Load(0.316) -> 23291 Time(436,436)Load(0.322) -> 26373 Time(440,440)Load(0.324) -> 19153 Time(444,444)Load(0.345) -> 27257 Time(448,448)Load(0.35) -> 23971 Time(452,452)Load(0.367) -> 19434 Time(455,455)Load(0.376) -> 24959 Time(462,462)Load(0.378) -> 25998 Time(473,473)Load(0.436) -> 2599 Time(480,480)Load(0.442) -> 3907 Time(483,483)Load(0.448) -> 10252 Time(485,485)Load(0.457) -> 15733 Time(488,488)Load(0.47) -> 16484 Time(491,491)Load(0.489) -> 26189 Time(496,496)Load(0.494) -> depot Time(509,509) & Load(0.494)
+Distance of the route: 49km
+Load of the route: 0.494m^3
+Start time of the route: 321min
+End Time of the route: 509min
+
+Route for vehicle 36:
+depot Time(305,305)Load(0.0) -> depot Time(360,360)Load(0.0) -> 24685 Time(364,364)Load(0.006) -> 4464 Time(369,369)Load(0.01) -> 17316 Time(372,372)Load(0.013) -> 27379 Time(377,377)Load(0.068) -> 2556 Time(381,381)Load(0.073) -> 23779 Time(385,385)Load(0.089) -> 19692 Time(389,389)Load(0.091) -> 11515 Time(393,393)Load(0.108) -> 9920 Time(396,396)Load(0.194) -> 2795 Time(398,398)Load(0.197) -> 17672 Time(402,402)Load(0.203) -> 16015 Time(406,406)Load(0.207) -> 16836 Time(410,410)Load(0.21) -> 26235 Time(414,414)Load(0.22) -> 26562 Time(418,418)Load(0.226) -> 17026 Time(421,421)Load(0.234) -> 25103 Time(425,425)Load(0.259) -> 4688 Time(432,432)Load(0.306) -> 3739 Time(445,445)Load(0.326) -> 6435 Time(457,457)Load(0.332) -> 2883 Time(469,469)Load(0.34) -> depot Time(473,473) & Load(0.34)
+Distance of the route: 35km
+Load of the route: 0.34m^3
+Start time of the route: 305min
+End Time of the route: 473min
+
+Route for vehicle 38:
+depot Time(322,322)Load(0.0) -> 6679 Time(360,360)Load(0.003) -> 19730 Time(362,362)Load(0.013) -> 22216 Time(366,366)Load(0.014) -> 12224 Time(373,373)Load(0.028) -> 27402 Time(379,379)Load(0.047) -> 22735 Time(386,386)Load(0.05) -> 16612 Time(393,393)Load(0.052) -> 15260 Time(402,402)Load(0.054) -> 25908 Time(405,405)Load(0.065) -> 9295 Time(409,409)Load(0.069) -> 11577 Time(412,412)Load(0.075) -> 20960 Time(415,415)Load(0.153) -> 16592 Time(420,420)Load(0.2) -> 22798 Time(424,424)Load(0.203) -> 23445 Time(432,432)Load(0.257) -> 15895 Time(442,442)Load(0.26) -> 27488 Time(446,446)Load(0.261) -> 2769 Time(450,450)Load(0.264) -> 22254 Time(455,455)Load(0.267) -> 17381 Time(464,464)Load(0.277) -> 24885 Time(471,471)Load(0.336) -> 8260 Time(478,478)Load(0.338) -> 14482 Time(487,487)Load(0.343) -> 19202 Time(491,491)Load(0.355) -> 15677 Time(494,494)Load(0.381) -> 17565 Time(501,501)Load(0.39) -> 21383 Time(512,512)Load(0.394) -> 26626 Time(517,517)Load(0.4) -> depot Time(524,524) & Load(0.4)
+Distance of the route: 69km
+Load of the route: 0.4m^3
+Start time of the route: 322min
+End Time of the route: 524min
+
+Route for vehicle 39:
+depot Time(322,322)Load(0.0) -> 14847 Time(360,360)Load(0.028) -> 5199 Time(364,364)Load(0.063) -> 7086 Time(367,367)Load(0.066) -> 25122 Time(372,372)Load(0.154) -> 12144 Time(374,374)Load(0.187) -> 8930 Time(380,380)Load(0.192) -> 11723 Time(386,386)Load(0.195) -> 11589 Time(391,391)Load(0.214) -> 12055 Time(395,395)Load(0.216) -> 7290 Time(402,402)Load(0.225) -> 16619 Time(416,416)Load(0.268) -> 3937 Time(421,421)Load(0.271) -> 25940 Time(427,427)Load(0.275) -> 22806 Time(431,431)Load(0.281) -> 11246 Time(434,434)Load(0.289) -> 12852 Time(437,437)Load(0.297) -> 23431 Time(439,439)Load(0.315) -> 27463 Time(442,442)Load(0.323) -> 19284 Time(446,446)Load(0.327) -> 14861 Time(449,449)Load(0.33) -> 8110 Time(452,452)Load(0.336) -> 19848 Time(455,455)Load(0.339) -> 11484 Time(459,459)Load(0.355) -> 16328 Time(463,463)Load(0.36) -> 2532 Time(467,467)Load(0.36) -> 15799 Time(471,471)Load(0.365) -> 16527 Time(479,479)Load(0.366) -> 7978 Time(483,483)Load(0.37) -> 2541 Time(497,497)Load(0.381) -> 17375 Time(499,499)Load(0.385) -> 15828 Time(508,508)Load(0.387) -> 9401 Time(511,511)Load(0.392) -> 9770 Time(516,516)Load(0.395) -> 5144 Time(529,529)Load(0.424) -> depot Time(542,542) & Load(0.424)
+Distance of the route: 68km
+Load of the route: 0.424m^3
+Start time of the route: 322min
+End Time of the route: 542min
+
+Route for vehicle 40:
+depot Time(318,318)Load(0.0) -> 11867 Time(360,360)Load(0.006) -> 26250 Time(382,382)Load(0.011) -> 10706 Time(384,384)Load(0.025) -> 9773 Time(387,387)Load(0.027) -> 11446 Time(391,391)Load(0.03) -> 24562 Time(402,402)Load(0.059) -> 2475 Time(412,412)Load(0.062) -> 15238 Time(420,420)Load(0.065) -> 24255 Time(426,426)Load(0.068) -> 26476 Time(446,446)Load(0.116) -> 18922 Time(453,453)Load(0.264) -> 16109 Time(460,460)Load(0.277) -> 16218 Time(463,463)Load(0.301) -> 9635 Time(469,469)Load(0.309) -> 2473 Time(497,497)Load(0.324) -> 19646 Time(525,525)Load(0.327) -> 25831 Time(533,533)Load(0.328) -> 8545 Time(540,540)Load(0.334) -> depot Time(554,554) & Load(0.334)
+Distance of the route: 81km
+Load of the route: 0.334m^3
+Start time of the route: 318min
+End Time of the route: 554min
+
+Route for vehicle 41:
+depot Time(320,320)Load(0.0) -> 7083 Time(360,360)Load(0.001) -> 25776 Time(362,362)Load(0.008) -> 2534 Time(375,375)Load(0.011) -> 9199 Time(378,378)Load(0.025) -> 11419 Time(387,387)Load(0.035) -> 10372 Time(393,393)Load(0.041) -> 20070 Time(397,397)Load(0.044) -> 23243 Time(403,403)Load(0.066) -> 14621 Time(406,406)Load(0.082) -> 19780 Time(412,412)Load(0.098) -> 16360 Time(418,418)Load(0.131) -> 23850 Time(426,426)Load(0.168) -> 16347 Time(431,431)Load(0.2) -> 14313 Time(434,434)Load(0.209) -> 26434 Time(439,439)Load(0.22) -> 26266 Time(444,444)Load(0.23) -> 16330 Time(452,452)Load(0.277) -> 25305 Time(459,459)Load(0.279) -> 19617 Time(466,466)Load(0.292) -> 14353 Time(469,469)Load(0.295) -> 5700 Time(473,473)Load(0.301) -> 11979 Time(480,480)Load(0.305) -> 15906 Time(486,486)Load(0.308) -> 4938 Time(491,491)Load(0.315) -> 15459 Time(500,500)Load(0.316) -> 12065 Time(504,504)Load(0.32) -> 7581 Time(506,506)Load(0.321) -> 4246 Time(510,510)Load(0.357) -> 16673 Time(520,520)Load(0.399) -> 25448 Time(525,525)Load(0.444) -> 25344 Time(528,528)Load(0.452) -> depot Time(535,535) & Load(0.452)
+Distance of the route: 70km
+Load of the route: 0.452m^3
+Start time of the route: 320min
+End Time of the route: 535min
+
+Route for vehicle 42:
+depot Time(323,323)Load(0.0) -> 2587 Time(360,360)Load(0.004) -> 14624 Time(362,362)Load(0.026) -> 11175 Time(368,368)Load(0.042) -> 15910 Time(370,370)Load(0.052) -> 15351 Time(372,372)Load(0.085) -> 11681 Time(375,375)Load(0.132) -> 11614 Time(378,378)Load(0.136) -> 3672 Time(381,381)Load(0.14) -> 2717 Time(384,384)Load(0.153) -> 11668 Time(388,388)Load(0.159) -> 15674 Time(392,392)Load(0.172) -> 15637 Time(398,398)Load(0.176) -> 6059 Time(405,405)Load(0.179) -> 7014 Time(409,409)Load(0.202) -> 22034 Time(412,412)Load(0.205) -> 15578 Time(415,415)Load(0.207) -> 5178 Time(420,420)Load(0.215) -> 2504 Time(427,427)Load(0.239) -> 26545 Time(431,431)Load(0.245) -> 7823 Time(435,435)Load(0.262) -> 2837 Time(438,438)Load(0.297) -> 23983 Time(444,444)Load(0.331) -> 3645 Time(451,451)Load(0.333) -> 2543 Time(455,455)Load(0.334) -> 9815 Time(462,462)Load(0.337) -> 5315 Time(465,465)Load(0.342) -> 3934 Time(468,468)Load(0.386) -> 2825 Time(472,472)Load(0.392) -> 16114 Time(478,478)Load(0.395) -> 2876 Time(481,481)Load(0.398) -> 9575 Time(486,486)Load(0.491) -> 16626 Time(489,489)Load(0.494) -> 4482 Time(493,493)Load(0.5) -> 15787 Time(497,497)Load(0.504) -> 2549 Time(502,502)Load(0.505) -> 17190 Time(508,508)Load(0.506) -> 10217 Time(514,514)Load(0.511) -> 4364 Time(518,518)Load(0.522) -> 9708 Time(521,521)Load(0.532) -> 6259 Time(525,525)Load(0.536) -> 3201 Time(527,527)Load(0.546) -> 16523 Time(531,531)Load(0.548) -> depot Time(540,540) & Load(0.548)
+Distance of the route: 27km
+Load of the route: 0.548m^3
+Start time of the route: 323min
+End Time of the route: 540min
+
+Route for vehicle 43:
+depot Time(316,316)Load(0.0) -> 23127 Time(360,360)Load(0.0) -> 27497 Time(363,363)Load(0.003) -> 27407 Time(366,366)Load(0.045) -> 27317 Time(370,370)Load(0.079) -> 27382 Time(374,374)Load(0.116) -> 27369 Time(376,376)Load(0.118) -> 26411 Time(379,379)Load(0.16) -> 26342 Time(382,382)Load(0.164) -> 25677 Time(384,384)Load(0.165) -> 25633 Time(387,387)Load(0.205) -> 25214 Time(390,390)Load(0.215) -> 25561 Time(394,394)Load(0.219) -> 26029 Time(398,398)Load(0.22) -> 22501 Time(401,401)Load(0.227) -> 15123 Time(404,404)Load(0.232) -> 25387 Time(407,407)Load(0.232) -> 26095 Time(409,409)Load(0.246) -> 22662 Time(412,412)Load(0.25) -> 24969 Time(415,415)Load(0.293) -> 26044 Time(419,419)Load(0.295) -> 26398 Time(423,423)Load(0.429) -> 27275 Time(426,426)Load(0.455) -> 25442 Time(429,429)Load(0.464) -> 25405 Time(432,432)Load(0.475) -> 23614 Time(435,435)Load(0.485) -> 24692 Time(438,438)Load(0.493) -> 22999 Time(441,441)Load(0.562) -> 22950 Time(444,444)Load(0.568) -> 22809 Time(447,447)Load(0.581) -> 22353 Time(449,449)Load(0.603) -> 21291 Time(452,452)Load(0.735) -> 23221 Time(455,455)Load(0.742) -> 23205 Time(458,458)Load(0.747) -> 24757 Time(461,461)Load(0.754) -> 21130 Time(465,465)Load(0.756) -> 21055 Time(468,468)Load(0.798) -> 19637 Time(472,472)Load(0.804) -> 5973 Time(475,475)Load(0.841) -> 3952 Time(479,479)Load(0.933) -> 15753 Time(483,483)Load(0.935) -> 10632 Time(487,487)Load(1.024) -> 2630 Time(491,491)Load(1.056) -> 2610 Time(494,494)Load(1.057) -> 2443 Time(497,497)Load(1.06) -> 19686 Time(502,502)Load(1.065) -> 25504 Time(505,505)Load(1.069) -> 17537 Time(508,508)Load(1.069) -> 15215 Time(511,511)Load(1.075) -> 4445 Time(515,515)Load(1.075) -> 25431 Time(521,521)Load(1.082) -> depot Time(535,535) & Load(1.082)
+Distance of the route: 16km
+Load of the route: 1.082m^3
+Start time of the route: 316min
+End Time of the route: 535min
+
+Route for vehicle 44:
+depot Time(313,313)Load(0.0) -> 4954 Time(360,360)Load(0.015) -> 2480 Time(364,364)Load(0.028) -> 23439 Time(370,370)Load(0.056) -> 5524 Time(373,373)Load(0.057) -> 24472 Time(376,376)Load(0.058) -> 23009 Time(382,382)Load(0.081) -> 25913 Time(385,385)Load(0.085) -> 17426 Time(394,394)Load(0.099) -> 19722 Time(401,401)Load(0.101) -> 2816 Time(405,405)Load(0.107) -> 15738 Time(410,410)Load(0.108) -> 6021 Time(415,415)Load(0.114) -> 9467 Time(418,418)Load(0.132) -> 25815 Time(420,420)Load(0.145) -> 25007 Time(427,427)Load(0.178) -> 24541 Time(431,431)Load(0.183) -> 5545 Time(434,434)Load(0.188) -> 6245 Time(437,437)Load(0.192) -> 14206 Time(440,440)Load(0.193) -> 15548 Time(443,443)Load(0.253) -> 24242 Time(449,449)Load(0.256) -> 24730 Time(456,456)Load(0.26) -> 23064 Time(458,458)Load(0.266) -> 25145 Time(462,462)Load(0.28) -> 15691 Time(471,471)Load(0.284) -> 3904 Time(475,475)Load(0.298) -> 25381 Time(482,482)Load(0.342) -> 25999 Time(488,488)Load(0.362) -> 7231 Time(493,493)Load(0.365) -> 17361 Time(496,496)Load(0.375) -> 23065 Time(502,502)Load(0.381) -> 19660 Time(505,505)Load(0.397) -> 15623 Time(514,514)Load(0.41) -> 4661 Time(523,523)Load(0.443) -> 24805 Time(529,529)Load(0.45) -> 25895 Time(535,535)Load(0.464) -> depot Time(551,551) & Load(0.464)
+Distance of the route: 71km
+Load of the route: 0.464m^3
+Start time of the route: 313min
+End Time of the route: 551min
+
+Route for vehicle 45:
+depot Time(323,323)Load(0.0) -> 5195 Time(360,360)Load(0.01) -> 27508 Time(362,362)Load(0.028) -> 25345 Time(366,366)Load(0.031) -> 14370 Time(371,371)Load(0.033) -> 25736 Time(375,375)Load(0.039) -> 16937 Time(378,378)Load(0.041) -> 3830 Time(382,382)Load(0.048) -> 9088 Time(385,385)Load(0.054) -> 15782 Time(389,389)Load(0.076) -> 15736 Time(392,392)Load(0.113) -> 16242 Time(396,396)Load(0.116) -> 18905 Time(400,400)Load(0.13) -> 26070 Time(404,404)Load(0.134) -> 25558 Time(408,408)Load(0.134) -> 26158 Time(412,412)Load(0.147) -> 25964 Time(416,416)Load(0.151) -> 25780 Time(420,420)Load(0.152) -> 25350 Time(425,425)Load(0.178) -> 19788 Time(430,430)Load(0.21) -> 17685 Time(433,433)Load(0.22) -> 16608 Time(437,437)Load(0.225) -> 25196 Time(441,441)Load(0.229) -> 24984 Time(444,444)Load(0.232) -> 24272 Time(447,447)Load(0.236) -> 23391 Time(451,451)Load(0.242) -> 23288 Time(455,455)Load(0.251) -> 7384 Time(458,458)Load(0.257) -> 16036 Time(463,463)Load(0.264) -> 17115 Time(466,466)Load(0.265) -> 15577 Time(468,468)Load(0.408) -> 14715 Time(473,473)Load(0.414) -> 22914 Time(479,479)Load(0.42) -> 22711 Time(481,481)Load(0.43) -> 10034 Time(485,485)Load(0.45) -> 2627 Time(489,489)Load(0.456) -> 21360 Time(491,491)Load(0.508) -> 23054 Time(493,493)Load(0.532) -> 23008 Time(497,497)Load(0.534) -> 22931 Time(501,501)Load(0.589) -> 21693 Time(505,505)Load(0.618) -> 25232 Time(510,510)Load(0.625) -> 25204 Time(513,513)Load(0.631) -> 19333 Time(516,516)Load(0.698) -> 17534 Time(520,520)Load(0.705) -> 25068 Time(524,524)Load(0.707) -> 19061 Time(528,528)Load(0.716) -> depot Time(539,539) & Load(0.716)
+Distance of the route: 16km
+Load of the route: 0.716m^3
+Start time of the route: 323min
+End Time of the route: 539min
+
+Route for vehicle 46:
+depot Time(322,322)Load(0.0) -> 11380 Time(360,360)Load(0.003) -> 26005 Time(362,362)Load(0.006) -> 23247 Time(364,364)Load(0.015) -> 5099 Time(368,368)Load(0.024) -> 26124 Time(373,373)Load(0.026) -> 15810 Time(379,379)Load(0.039) -> 14578 Time(383,383)Load(0.071) -> 21290 Time(386,386)Load(0.116) -> 26155 Time(392,392)Load(0.131) -> 21656 Time(397,397)Load(0.166) -> 25605 Time(407,407)Load(0.179) -> 16426 Time(411,411)Load(0.181) -> 4867 Time(414,414)Load(0.19) -> 2470 Time(420,420)Load(0.247) -> 24831 Time(427,427)Load(0.251) -> 10244 Time(431,431)Load(0.257) -> 9576 Time(436,436)Load(0.269) -> 25368 Time(443,443)Load(0.278) -> 22862 Time(447,447)Load(0.304) -> 24918 Time(451,451)Load(0.31) -> 19232 Time(456,456)Load(0.312) -> 16171 Time(459,459)Load(0.33) -> 15800 Time(461,461)Load(0.332) -> 15419 Time(464,464)Load(0.333) -> 22951 Time(468,468)Load(0.352) -> 11460 Time(484,484)Load(0.355) -> 22484 Time(501,501)Load(0.359) -> 27395 Time(509,509)Load(0.364) -> 19212 Time(515,515)Load(0.368) -> 2675 Time(518,518)Load(0.37) -> depot Time(533,533) & Load(0.37)
+Distance of the route: 54km
+Load of the route: 0.37m^3
+Start time of the route: 322min
+End Time of the route: 533min
+
+Route for vehicle 47:
+depot Time(324,324)Load(0.0) -> 2502 Time(360,360)Load(0.003) -> 18035 Time(364,364)Load(0.007) -> 17894 Time(369,369)Load(0.029) -> 15115 Time(372,372)Load(0.04) -> 16323 Time(375,375)Load(0.043) -> 27403 Time(378,378)Load(0.052) -> 25730 Time(381,381)Load(0.074) -> 10327 Time(384,384)Load(0.085) -> 6753 Time(390,390)Load(0.101) -> 15570 Time(394,394)Load(0.104) -> 24727 Time(400,400)Load(0.11) -> 25689 Time(404,404)Load(0.116) -> 2908 Time(407,407)Load(0.132) -> 2797 Time(412,412)Load(0.133) -> 21350 Time(416,416)Load(0.147) -> 2792 Time(419,419)Load(0.15) -> 25161 Time(424,424)Load(0.164) -> 26498 Time(427,427)Load(0.196) -> 26378 Time(431,431)Load(0.206) -> 25661 Time(434,434)Load(0.267) -> 25607 Time(438,438)Load(0.288) -> 27523 Time(442,442)Load(0.294) -> 27383 Time(446,446)Load(0.308) -> 25909 Time(450,450)Load(0.313) -> 25592 Time(452,452)Load(0.323) -> 25073 Time(456,456)Load(0.383) -> 7087 Time(458,458)Load(0.477) -> 25825 Time(460,460)Load(0.522) -> 23151 Time(464,464)Load(0.531) -> 21414 Time(467,467)Load(0.538) -> 19865 Time(469,469)Load(0.544) -> 19499 Time(472,472)Load(0.55) -> 19442 Time(476,476)Load(0.557) -> 17139 Time(479,479)Load(0.567) -> 16543 Time(482,482)Load(0.581) -> 24939 Time(485,485)Load(0.59) -> 19201 Time(487,487)Load(0.596) -> 15794 Time(490,490)Load(0.599) -> 15633 Time(493,493)Load(0.642) -> 14896 Time(496,496)Load(0.659) -> 16241 Time(499,499)Load(0.663) -> 25690 Time(504,504)Load(0.669) -> 22223 Time(506,506)Load(0.683) -> 21560 Time(510,510)Load(0.693) -> 22443 Time(514,514)Load(0.706) -> 17770 Time(519,519)Load(0.707) -> 25217 Time(522,522)Load(0.712) -> depot Time(532,532) & Load(0.712)
+Distance of the route: 21km
+Load of the route: 0.712m^3
+Start time of the route: 324min
+End Time of the route: 532min
+
+Route for vehicle 48:
+depot Time(323,323)Load(0.0) -> 4271 Time(360,360)Load(0.004) -> 21549 Time(362,362)Load(0.058) -> 15429 Time(365,365)Load(0.061) -> 16633 Time(369,369)Load(0.07) -> 12641 Time(374,374)Load(0.09) -> 18961 Time(379,379)Load(0.101) -> 14982 Time(382,382)Load(0.109) -> 25357 Time(385,385)Load(0.115) -> 19454 Time(387,387)Load(0.118) -> 19317 Time(389,389)Load(0.129) -> 16116 Time(393,393)Load(0.153) -> 9751 Time(397,397)Load(0.156) -> 15983 Time(401,401)Load(0.17) -> 17436 Time(405,405)Load(0.176) -> 11584 Time(409,409)Load(0.187) -> 6045 Time(413,413)Load(0.232) -> 10535 Time(416,416)Load(0.238) -> 15302 Time(419,419)Load(0.28) -> 10386 Time(422,422)Load(0.298) -> 25707 Time(425,425)Load(0.3) -> 6900 Time(427,427)Load(0.309) -> 6663 Time(430,430)Load(0.32) -> 7908 Time(434,434)Load(0.321) -> 7694 Time(436,436)Load(0.327) -> 6781 Time(440,440)Load(0.382) -> 3589 Time(443,443)Load(0.382) -> 2567 Time(447,447)Load(0.386) -> 2498 Time(451,451)Load(0.439) -> 2476 Time(454,454)Load(0.447) -> 2810 Time(459,459)Load(0.456) -> 23192 Time(463,463)Load(0.462) -> 22926 Time(466,466)Load(0.464) -> 24718 Time(470,470)Load(0.472) -> 17322 Time(473,473)Load(0.475) -> 17205 Time(477,477)Load(0.523) -> 17963 Time(481,481)Load(0.534) -> 22846 Time(485,485)Load(0.617) -> 21525 Time(489,489)Load(0.621) -> 19002 Time(492,492)Load(0.626) -> 16822 Time(495,495)Load(0.629) -> 16794 Time(499,499)Load(0.662) -> 17920 Time(502,502)Load(0.665) -> 16964 Time(506,506)Load(0.703) -> 17141 Time(510,510)Load(0.707) -> 16991 Time(513,513)Load(0.722) -> 16844 Time(516,516)Load(0.731) -> 15689 Time(519,519)Load(0.749) -> 15626 Time(522,522)Load(0.762) -> 15457 Time(525,525)Load(0.837) -> depot Time(539,539) & Load(0.837)
+Distance of the route: 13km
+Load of the route: 0.837m^3
+Start time of the route: 323min
+End Time of the route: 539min
+
+Route for vehicle 49:
+depot Time(321,321)Load(0.0) -> 26261 Time(360,360)Load(0.006) -> 25946 Time(365,365)Load(0.031) -> 17395 Time(368,368)Load(0.09) -> 26036 Time(372,372)Load(0.108) -> 26521 Time(377,377)Load(0.132) -> 25715 Time(381,381)Load(0.148) -> 23402 Time(385,385)Load(0.184) -> 16766 Time(388,388)Load(0.186) -> 8182 Time(393,393)Load(0.189) -> 17006 Time(396,396)Load(0.195) -> 23361 Time(401,401)Load(0.204) -> 15681 Time(405,405)Load(0.212) -> 15989 Time(408,408)Load(0.236) -> 15166 Time(412,412)Load(0.241) -> 16872 Time(414,414)Load(0.251) -> 23975 Time(418,418)Load(0.266) -> 16091 Time(428,428)Load(0.281) -> 14913 Time(435,435)Load(0.322) -> 16446 Time(446,446)Load(0.332) -> 12267 Time(452,452)Load(0.338) -> 27321 Time(456,456)Load(0.349) -> 23140 Time(458,458)Load(0.352) -> 12592 Time(474,474)Load(0.358) -> 16422 Time(483,483)Load(0.388) -> 24403 Time(491,491)Load(0.391) -> 8141 Time(495,495)Load(0.401) -> 12914 Time(500,500)Load(0.419) -> 24569 Time(504,504)Load(0.452) -> 23893 Time(507,507)Load(0.463) -> 19198 Time(509,509)Load(0.49) -> 16176 Time(513,513)Load(0.56) -> 25177 Time(516,516)Load(0.566) -> 25034 Time(520,520)Load(0.57) -> depot Time(532,532) & Load(0.57)
+Distance of the route: 50km
+Load of the route: 0.57m^3
+Start time of the route: 321min
+End Time of the route: 532min
+
+Route for vehicle 50:
+depot Time(326,326)Load(0.0) -> 12262 Time(360,360)Load(0.053) -> 15472 Time(363,363)Load(0.09) -> 11078 Time(367,367)Load(0.113) -> 25803 Time(372,372)Load(0.145) -> 24706 Time(378,378)Load(0.147) -> 25697 Time(390,390)Load(0.151) -> 25458 Time(402,402)Load(0.161) -> 24682 Time(409,409)Load(0.19) -> 11822 Time(411,411)Load(0.196) -> 5939 Time(414,414)Load(0.205) -> 4450 Time(418,418)Load(0.228) -> 16649 Time(422,422)Load(0.231) -> 21049 Time(428,428)Load(0.245) -> 16919 Time(432,432)Load(0.249) -> 10765 Time(438,438)Load(0.274) -> 25051 Time(442,442)Load(0.28) -> 16073 Time(444,444)Load(0.285) -> 9855 Time(448,448)Load(0.295) -> 10818 Time(452,452)Load(0.32) -> 24648 Time(461,461)Load(0.321) -> 12139 Time(470,470)Load(0.324) -> 24711 Time(484,484)Load(0.327) -> 22360 Time(486,486)Load(0.343) -> 25114 Time(498,498)Load(0.353) -> 14666 Time(504,504)Load(0.366) -> 25131 Time(514,514)Load(0.372) -> 16675 Time(516,516)Load(0.374) -> 5901 Time(520,520)Load(0.374) -> 19095 Time(527,527)Load(0.38) -> 26615 Time(533,533)Load(0.485) -> 2787 Time(540,540)Load(0.488) -> depot Time(566,566) & Load(0.488)
+Distance of the route: 66km
+Load of the route: 0.488m^3
+Start time of the route: 326min
+End Time of the route: 566min
+
+Real objective: 1020252.9
+Number of cars used: 17
+Total distance of all routes: 843km
+Total load of all routes: 8.86m^3
+Total time of all routes: 9018min
+
+---------------------------------------------------
+
+
+---------------------------------------------------
+** Zone4**
+Objective: {3800915}
+
+Route for vehicle 32:
+depot Time(500,500)Load(0.0) -> 16648 Time(540,540)Load(0.019) -> 5660 Time(545,545)Load(0.022) -> 9382 Time(553,553)Load(0.04) -> 14314 Time(559,559)Load(0.045) -> 15418 Time(572,572)Load(0.065) -> 23434 Time(589,589)Load(0.069) -> 2465 Time(603,603)Load(0.072) -> 22816 Time(607,607)Load(0.147) -> 16082 Time(616,616)Load(0.152) -> 25863 Time(620,620)Load(0.155) -> 17927 Time(626,626)Load(0.158) -> 27489 Time(629,629)Load(0.168) -> 6875 Time(637,637)Load(0.199) -> 21541 Time(644,644)Load(0.215) -> 2341 Time(649,649)Load(0.23) -> 7270 Time(655,655)Load(0.244) -> 2601 Time(660,660)Load(0.25) -> 5773 Time(663,663)Load(0.299) -> 2467 Time(667,667)Load(0.309) -> 2679 Time(672,672)Load(0.314) -> 16747 Time(678,678)Load(0.328) -> 15090 Time(683,683)Load(0.332) -> 7717 Time(688,688)Load(0.348) -> 26430 Time(692,692)Load(0.352) -> 16922 Time(695,695)Load(0.353) -> 14574 Time(698,698)Load(0.371) -> 7274 Time(705,705)Load(0.38) -> 23119 Time(710,710)Load(0.399) -> 24497 Time(714,714)Load(0.435) -> depot Time(718,718) & Load(0.435)
+Distance of the route: 70km
+Load of the route: 0.435m^3
+Start time of the route: 500min
+End Time of the route: 718min
+
+Route for vehicle 33:
+depot Time(497,497)Load(0.0) -> 24702 Time(540,540)Load(0.059) -> 15817 Time(546,546)Load(0.062) -> 26541 Time(554,554)Load(0.068) -> 27370 Time(558,558)Load(0.109) -> 27493 Time(564,564)Load(0.12) -> 10963 Time(597,597)Load(0.152) -> 24724 Time(629,629)Load(0.153) -> 24921 Time(639,639)Load(0.163) -> 15073 Time(641,641)Load(0.173) -> 2572 Time(645,645)Load(0.179) -> 5648 Time(650,650)Load(0.189) -> 24907 Time(654,654)Load(0.2) -> 22565 Time(665,665)Load(0.248) -> 19751 Time(678,678)Load(0.337) -> depot Time(697,697) & Load(0.337)
+Distance of the route: 42km
+Load of the route: 0.337m^3
+Start time of the route: 497min
+End Time of the route: 697min
+
+Route for vehicle 34:
+depot Time(493,493)Load(0.0) -> 4341 Time(540,540)Load(0.008) -> 9696 Time(546,546)Load(0.014) -> 18919 Time(551,551)Load(0.026) -> 14855 Time(554,554)Load(0.027) -> 24306 Time(560,560)Load(0.042) -> 7499 Time(563,563)Load(0.09) -> 14849 Time(570,570)Load(0.091) -> 15642 Time(576,576)Load(0.092) -> 10883 Time(581,581)Load(0.094) -> 17070 Time(589,589)Load(0.137) -> 26300 Time(593,593)Load(0.143) -> 8997 Time(601,601)Load(0.149) -> 25748 Time(605,605)Load(0.167) -> 24619 Time(615,615)Load(0.172) -> 26121 Time(618,618)Load(0.175) -> 2595 Time(625,625)Load(0.179) -> 22764 Time(628,628)Load(0.203) -> 15196 Time(632,632)Load(0.216) -> 25460 Time(638,638)Load(0.232) -> 5375 Time(648,648)Load(0.25) -> 6019 Time(651,651)Load(0.25) -> 5037 Time(660,660)Load(0.264) -> 19194 Time(671,671)Load(0.268) -> 24335 Time(677,677)Load(0.286) -> depot Time(681,681) & Load(0.286)
+Distance of the route: 68km
+Load of the route: 0.286m^3
+Start time of the route: 493min
+End Time of the route: 681min
+
+Route for vehicle 35:
+depot Time(496,496)Load(0.0) -> 25499 Time(540,540)Load(0.003) -> 17108 Time(543,543)Load(0.09) -> 16290 Time(557,557)Load(0.133) -> 26484 Time(563,563)Load(0.137) -> 25491 Time(569,569)Load(0.146) -> 20851 Time(572,572)Load(0.171) -> 22462 Time(577,577)Load(0.194) -> 11984 Time(583,583)Load(0.199) -> 10867 Time(587,587)Load(0.225) -> 25392 Time(596,596)Load(0.226) -> 17164 Time(598,598)Load(0.227) -> 24396 Time(604,604)Load(0.228) -> 23099 Time(607,607)Load(0.232) -> 22436 Time(610,610)Load(0.261) -> 22348 Time(614,614)Load(0.27) -> 17353 Time(617,617)Load(0.274) -> 17118 Time(620,620)Load(0.317) -> 24932 Time(624,624)Load(0.335) -> 25267 Time(628,628)Load(0.337) -> 23730 Time(630,630)Load(0.343) -> 7201 Time(636,636)Load(0.345) -> 22293 Time(641,641)Load(0.359) -> 25844 Time(645,645)Load(0.412) -> 22929 Time(652,652)Load(0.413) -> 25502 Time(657,657)Load(0.426) -> 19299 Time(665,665)Load(0.437) -> 22374 Time(672,672)Load(0.547) -> 15160 Time(679,679)Load(0.572) -> 2520 Time(688,688)Load(0.634) -> depot Time(699,699) & Load(0.634)
+Distance of the route: 66km
+Load of the route: 0.634m^3
+Start time of the route: 496min
+End Time of the route: 699min
+
+Route for vehicle 36:
+depot Time(498,498)Load(0.0) -> 15868 Time(540,540)Load(0.01) -> 26593 Time(551,551)Load(0.024) -> 19569 Time(560,560)Load(0.027) -> 24565 Time(565,565)Load(0.029) -> 2527 Time(569,569)Load(0.034) -> 26190 Time(574,574)Load(0.076) -> 17609 Time(577,577)Load(0.079) -> 12479 Time(579,579)Load(0.084) -> 7451 Time(581,581)Load(0.085) -> 25399 Time(585,585)Load(0.088) -> 21921 Time(588,588)Load(0.102) -> 15784 Time(592,592)Load(0.105) -> 27361 Time(595,595)Load(0.18) -> 25132 Time(599,599)Load(0.181) -> 16008 Time(602,602)Load(0.183) -> 15233 Time(607,607)Load(0.189) -> 9873 Time(616,616)Load(0.192) -> 14650 Time(625,625)Load(0.193) -> 25303 Time(632,632)Load(0.197) -> 24867 Time(643,643)Load(0.201) -> 5093 Time(646,646)Load(0.207) -> 7229 Time(653,653)Load(0.222) -> 26019 Time(659,659)Load(0.223) -> 5354 Time(665,665)Load(0.235) -> 24703 Time(675,675)Load(0.262) -> 24819 Time(686,686)Load(0.284) -> 11125 Time(698,698)Load(0.288) -> 16331 Time(700,700)Load(0.29) -> depot Time(714,714) & Load(0.29)
+Distance of the route: 78km
+Load of the route: 0.29m^3
+Start time of the route: 498min
+End Time of the route: 714min
+
+Route for vehicle 37:
+depot Time(501,501)Load(0.0) -> 14786 Time(540,540)Load(0.06) -> 20017 Time(543,543)Load(0.126) -> 19504 Time(547,547)Load(0.144) -> 12696 Time(550,550)Load(0.17) -> 9484 Time(554,554)Load(0.197) -> 16698 Time(556,556)Load(0.21) -> 27190 Time(561,561)Load(0.215) -> 17066 Time(565,565)Load(0.219) -> 12352 Time(568,568)Load(0.232) -> 19597 Time(572,572)Load(0.238) -> 2632 Time(576,576)Load(0.296) -> 2427 Time(578,578)Load(0.306) -> 2342 Time(581,581)Load(0.338) -> 22784 Time(587,587)Load(0.342) -> 14997 Time(594,594)Load(0.354) -> 23535 Time(596,596)Load(0.354) -> 25589 Time(600,600)Load(0.356) -> 21430 Time(608,608)Load(0.38) -> 23619 Time(611,611)Load(0.423) -> 19038 Time(615,615)Load(0.559) -> 15653 Time(621,621)Load(0.562) -> 19042 Time(626,626)Load(0.563) -> 6528 Time(633,633)Load(0.572) -> 25271 Time(645,645)Load(0.585) -> 26140 Time(656,656)Load(0.591) -> 10195 Time(658,658)Load(0.607) -> 5951 Time(666,666)Load(0.617) -> 17912 Time(679,679)Load(0.632) -> 24806 Time(686,686)Load(0.669) -> 3295 Time(689,689)Load(0.672) -> 5955 Time(694,694)Load(0.723) -> 2754 Time(698,698)Load(0.729) -> 2453 Time(702,702)Load(0.734) -> depot Time(713,713) & Load(0.734)
+Distance of the route: 58km
+Load of the route: 0.734m^3
+Start time of the route: 501min
+End Time of the route: 713min
+
+Route for vehicle 38:
+depot Time(503,503)Load(0.0) -> 4476 Time(540,540)Load(0.013) -> 19315 Time(546,546)Load(0.024) -> 2903 Time(551,551)Load(0.033) -> 4034 Time(555,555)Load(0.065) -> 16146 Time(558,558)Load(0.098) -> 2682 Time(563,563)Load(0.098) -> 9700 Time(567,567)Load(0.102) -> 2702 Time(572,572)Load(0.15) -> 11516 Time(575,575)Load(0.155) -> 6194 Time(577,577)Load(0.165) -> 6667 Time(580,580)Load(0.175) -> 6529 Time(583,583)Load(0.188) -> 5007 Time(586,586)Load(0.192) -> 4452 Time(589,589)Load(0.204) -> 4059 Time(592,592)Load(0.215) -> 2661 Time(596,596)Load(0.231) -> 2535 Time(600,600)Load(0.281) -> 21584 Time(604,604)Load(0.331) -> 4002 Time(608,608)Load(0.331) -> 2676 Time(611,611)Load(0.345) -> 2751 Time(614,614)Load(0.349) -> 2806 Time(617,617)Load(0.358) -> 2491 Time(621,621)Load(0.377) -> 25555 Time(626,626)Load(0.38) -> 25281 Time(629,629)Load(0.404) -> 25877 Time(632,632)Load(0.452) -> 23861 Time(636,636)Load(0.507) -> 23549 Time(638,638)Load(0.529) -> 22415 Time(641,641)Load(0.561) -> 19902 Time(643,643)Load(0.611) -> 19203 Time(646,646)Load(0.625) -> 17919 Time(649,649)Load(0.629) -> 15821 Time(652,652)Load(0.673) -> 2733 Time(654,654)Load(0.679) -> 17540 Time(657,657)Load(0.68) -> 23142 Time(662,662)Load(0.706) -> 24302 Time(664,664)Load(0.707) -> 15863 Time(667,667)Load(0.729) -> 25701 Time(671,671)Load(0.742) -> 23163 Time(675,675)Load(0.76) -> 22990 Time(679,679)Load(0.766) -> 23379 Time(683,683)Load(0.787) -> 16044 Time(686,686)Load(0.806) -> 24974 Time(692,692)Load(0.815) -> 16644 Time(694,694)Load(0.85) -> depot Time(704,704) & Load(0.85)
+Distance of the route: 17km
+Load of the route: 0.85m^3
+Start time of the route: 503min
+End Time of the route: 704min
+
+Route for vehicle 39:
+depot Time(502,502)Load(0.0) -> 24820 Time(540,540)Load(0.008) -> 15710 Time(545,545)Load(0.011) -> 2583 Time(549,549)Load(0.039) -> 17101 Time(555,555)Load(0.042) -> 7698 Time(560,560)Load(0.074) -> 8138 Time(564,564)Load(0.075) -> 18956 Time(568,568)Load(0.082) -> 25032 Time(571,571)Load(0.083) -> 17762 Time(574,574)Load(0.096) -> 2705 Time(576,576)Load(0.1) -> 25956 Time(582,582)Load(0.116) -> 27399 Time(588,588)Load(0.28) -> 15096 Time(592,592)Load(0.29) -> 7387 Time(597,597)Load(0.291) -> 23608 Time(601,601)Load(0.295) -> 6853 Time(604,604)Load(0.327) -> 27206 Time(608,608)Load(0.377) -> 24814 Time(624,624)Load(0.386) -> 12606 Time(642,642)Load(0.389) -> 4478 Time(646,646)Load(0.398) -> 19398 Time(652,652)Load(0.407) -> 6237 Time(655,655)Load(0.42) -> 6947 Time(661,661)Load(0.426) -> 23097 Time(664,664)Load(0.433) -> 17086 Time(670,670)Load(0.436) -> 10317 Time(676,676)Load(0.462) -> 19179 Time(686,686)Load(0.465) -> depot Time(698,698) & Load(0.465)
+Distance of the route: 59km
+Load of the route: 0.465m^3
+Start time of the route: 502min
+End Time of the route: 698min
+
+Route for vehicle 40:
+depot Time(503,503)Load(0.0) -> 26621 Time(540,540)Load(0.018) -> 25002 Time(544,544)Load(0.042) -> 24896 Time(547,547)Load(0.048) -> 27454 Time(551,551)Load(0.067) -> 27416 Time(554,554)Load(0.068) -> 27309 Time(557,557)Load(0.205) -> 25786 Time(560,560)Load(0.209) -> 25582 Time(564,564)Load(0.215) -> 27343 Time(569,569)Load(0.237) -> 25066 Time(572,572)Load(0.24) -> 22710 Time(575,575)Load(0.245) -> 4517 Time(579,579)Load(0.263) -> 22567 Time(582,582)Load(0.264) -> 17514 Time(585,585)Load(0.267) -> 24422 Time(590,590)Load(0.27) -> 25537 Time(594,594)Load(0.295) -> 23051 Time(600,600)Load(0.308) -> 25125 Time(604,604)Load(0.312) -> depot Time(626,626) & Load(0.312)
+Distance of the route: 28km
+Load of the route: 0.312m^3
+Start time of the route: 503min
+End Time of the route: 626min
+
+Route for vehicle 41:
+depot Time(503,503)Load(0.0) -> 21187 Time(540,540)Load(0.013) -> 26113 Time(544,544)Load(0.017) -> 15359 Time(549,549)Load(0.03) -> 15251 Time(557,557)Load(0.036) -> 10107 Time(561,561)Load(0.049) -> 25951 Time(565,565)Load(0.07) -> 10723 Time(569,569)Load(0.085) -> 5652 Time(571,571)Load(0.178) -> 10029 Time(576,576)Load(0.179) -> 15488 Time(583,583)Load(0.181) -> 4129 Time(586,586)Load(0.214) -> 4809 Time(592,592)Load(0.225) -> 19242 Time(600,600)Load(0.229) -> 11428 Time(604,604)Load(0.23) -> 2912 Time(607,607)Load(0.236) -> 8849 Time(611,611)Load(0.251) -> 4898 Time(614,614)Load(0.267) -> 4282 Time(620,620)Load(0.271) -> 2647 Time(624,624)Load(0.276) -> 22173 Time(630,630)Load(0.311) -> 15558 Time(632,632)Load(0.32) -> 16542 Time(637,637)Load(0.326) -> 2531 Time(640,640)Load(0.332) -> 16734 Time(645,645)Load(0.338) -> 16950 Time(650,650)Load(0.352) -> 15205 Time(653,653)Load(0.354) -> 8261 Time(655,655)Load(0.357) -> 5761 Time(659,659)Load(0.36) -> 15298 Time(662,662)Load(0.366) -> 15266 Time(665,665)Load(0.38) -> 12865 Time(667,667)Load(0.393) -> 5589 Time(675,675)Load(0.406) -> 14981 Time(679,679)Load(0.412) -> 16658 Time(682,682)Load(0.418) -> 4366 Time(689,689)Load(0.429) -> 6273 Time(693,693)Load(0.431) -> 6278 Time(696,696)Load(0.432) -> 4655 Time(700,700)Load(0.441) -> 24558 Time(706,706)Load(0.459) -> depot Time(718,718) & Load(0.459)
+Distance of the route: 39km
+Load of the route: 0.459m^3
+Start time of the route: 503min
+End Time of the route: 718min
+
+Route for vehicle 42:
+depot Time(502,502)Load(0.0) -> 10315 Time(540,540)Load(0.018) -> 25105 Time(543,543)Load(0.023) -> 23430 Time(546,546)Load(0.027) -> 19952 Time(549,549)Load(0.031) -> 16170 Time(552,552)Load(0.082) -> 19301 Time(555,555)Load(0.126) -> 15809 Time(559,559)Load(0.132) -> 27376 Time(565,565)Load(0.132) -> 6150 Time(568,568)Load(0.133) -> 16913 Time(573,573)Load(0.179) -> 26011 Time(583,583)Load(0.189) -> 4142 Time(586,586)Load(0.193) -> 2778 Time(598,598)Load(0.199) -> 27537 Time(606,606)Load(0.228) -> 22383 Time(612,612)Load(0.288) -> 27219 Time(618,618)Load(0.292) -> 2864 Time(623,623)Load(0.3) -> 26107 Time(626,626)Load(0.31) -> depot Time(639,639) & Load(0.31)
+Distance of the route: 30km
+Load of the route: 0.31m^3
+Start time of the route: 502min
+End Time of the route: 639min
+
+Route for vehicle 43:
+depot Time(501,501)Load(0.0) -> 26087 Time(540,540)Load(0.006) -> 23209 Time(544,544)Load(0.014) -> 22185 Time(548,548)Load(0.02) -> 17397 Time(551,551)Load(0.038) -> 17001 Time(555,555)Load(0.044) -> 10482 Time(559,559)Load(0.06) -> 6037 Time(563,563)Load(0.064) -> 24832 Time(566,566)Load(0.067) -> 19021 Time(568,568)Load(0.07) -> 16591 Time(570,570)Load(0.083) -> 25419 Time(572,572)Load(0.087) -> 24737 Time(578,578)Load(0.093) -> 15844 Time(581,581)Load(0.099) -> 4127 Time(585,585)Load(0.191) -> 24550 Time(590,590)Load(0.195) -> 19417 Time(595,595)Load(0.196) -> 17904 Time(598,598)Load(0.198) -> 23325 Time(601,601)Load(0.207) -> 24962 Time(605,605)Load(0.228) -> 16265 Time(608,608)Load(0.261) -> 15830 Time(611,611)Load(0.293) -> 11627 Time(616,616)Load(0.318) -> 16631 Time(620,620)Load(0.318) -> 26393 Time(623,623)Load(0.324) -> 23820 Time(625,625)Load(0.331) -> 22769 Time(628,628)Load(0.348) -> 15593 Time(633,633)Load(0.35) -> 14614 Time(636,636)Load(0.381) -> 5806 Time(639,639)Load(0.383) -> 25719 Time(643,643)Load(0.418) -> depot Time(651,651) & Load(0.418)
+Distance of the route: 12km
+Load of the route: 0.418m^3
+Start time of the route: 501min
+End Time of the route: 651min
+
+Route for vehicle 44:
+depot Time(498,498)Load(0.0) -> 15802 Time(540,540)Load(0.054) -> 15970 Time(546,546)Load(0.056) -> 25811 Time(548,548)Load(0.066) -> 7383 Time(554,554)Load(0.072) -> 25692 Time(561,561)Load(0.074) -> 26226 Time(567,567)Load(0.078) -> 25198 Time(577,577)Load(0.081) -> 10980 Time(584,584)Load(0.09) -> 21427 Time(589,589)Load(0.119) -> 15244 Time(592,592)Load(0.12) -> 10813 Time(595,595)Load(0.173) -> 26022 Time(601,601)Load(0.183) -> 10294 Time(607,607)Load(0.231) -> 7534 Time(611,611)Load(0.244) -> 2486 Time(614,614)Load(0.245) -> 2440 Time(621,621)Load(0.259) -> 26427 Time(625,625)Load(0.265) -> 17907 Time(632,632)Load(0.266) -> 2560 Time(641,641)Load(0.284) -> 26517 Time(646,646)Load(0.295) -> 2516 Time(650,650)Load(0.299) -> 19316 Time(654,654)Load(0.312) -> depot Time(665,665) & Load(0.312)
+Distance of the route: 56km
+Load of the route: 0.312m^3
+Start time of the route: 498min
+End Time of the route: 665min
+
+Route for vehicle 45:
+depot Time(499,499)Load(0.0) -> 25302 Time(540,540)Load(0.013) -> 19623 Time(544,544)Load(0.019) -> 6300 Time(547,547)Load(0.024) -> 25777 Time(554,554)Load(0.03) -> 19339 Time(556,556)Load(0.039) -> 17360 Time(559,559)Load(0.041) -> 2826 Time(567,567)Load(0.045) -> 19428 Time(573,573)Load(0.055) -> 10198 Time(577,577)Load(0.058) -> 14505 Time(581,581)Load(0.062) -> 2554 Time(585,585)Load(0.065) -> 11722 Time(588,588)Load(0.079) -> 25223 Time(599,599)Load(0.085) -> 23143 Time(605,605)Load(0.09) -> 2740 Time(613,613)Load(0.096) -> 7593 Time(625,625)Load(0.106) -> 23180 Time(629,629)Load(0.111) -> 12396 Time(633,633)Load(0.121) -> 6366 Time(644,644)Load(0.129) -> 10339 Time(646,646)Load(0.134) -> 19100 Time(652,652)Load(0.135) -> 25587 Time(659,659)Load(0.138) -> depot Time(662,662) & Load(0.138)
+Distance of the route: 56km
+Load of the route: 0.138m^3
+Start time of the route: 499min
+End Time of the route: 662min
+
+Route for vehicle 46:
+depot Time(503,503)Load(0.0) -> 12244 Time(540,540)Load(0.005) -> 19165 Time(543,543)Load(0.009) -> 15813 Time(546,546)Load(0.022) -> 15361 Time(549,549)Load(0.057) -> 12229 Time(552,552)Load(0.075) -> 4389 Time(554,554)Load(0.081) -> 2574 Time(556,556)Load(0.083) -> 24744 Time(561,561)Load(0.27) -> 22369 Time(565,565)Load(0.274) -> 25050 Time(571,571)Load(0.283) -> 19500 Time(574,574)Load(0.296) -> 24719 Time(577,577)Load(0.309) -> 16632 Time(580,580)Load(0.313) -> 25353 Time(585,585)Load(0.317) -> 20779 Time(588,588)Load(0.34) -> 21179 Time(592,592)Load(0.395) -> 5258 Time(596,596)Load(0.398) -> 16313 Time(602,602)Load(0.4) -> 17496 Time(608,608)Load(0.41) -> 14562 Time(610,610)Load(0.478) -> 15257 Time(614,614)Load(0.481) -> 19270 Time(618,618)Load(0.488) -> 15679 Time(623,623)Load(0.491) -> 11432 Time(628,628)Load(0.496) -> 10831 Time(631,631)Load(0.497) -> 10259 Time(635,635)Load(0.505) -> 6575 Time(639,639)Load(0.511) -> 12214 Time(643,643)Load(0.528) -> 16421 Time(648,648)Load(0.537) -> 7382 Time(653,653)Load(0.541) -> 12124 Time(656,656)Load(0.555) -> 8581 Time(660,660)Load(0.56) -> 11000 Time(663,663)Load(0.579) -> 10026 Time(665,665)Load(0.581) -> 8468 Time(669,669)Load(0.583) -> 10369 Time(673,673)Load(0.586) -> 2770 Time(675,675)Load(0.596) -> 25876 Time(680,680)Load(0.644) -> 26389 Time(684,684)Load(0.647) -> 11592 Time(687,687)Load(0.721) -> 5768 Time(690,690)Load(0.725) -> 2739 Time(695,695)Load(0.765) -> 26693 Time(700,700)Load(0.768) -> depot Time(716,716) & Load(0.768)
+Distance of the route: 32km
+Load of the route: 0.768m^3
+Start time of the route: 503min
+End Time of the route: 716min
+
+Route for vehicle 47:
+depot Time(498,498)Load(0.0) -> 21518 Time(540,540)Load(0.004) -> 24499 Time(548,548)Load(0.008) -> 16576 Time(552,552)Load(0.082) -> 15494 Time(559,559)Load(0.092) -> 10730 Time(562,562)Load(0.105) -> 25213 Time(564,564)Load(0.111) -> 4905 Time(569,569)Load(0.121) -> 22481 Time(574,574)Load(0.131) -> 4608 Time(583,583)Load(0.153) -> 16061 Time(588,588)Load(0.156) -> 25126 Time(592,592)Load(0.16) -> 22838 Time(598,598)Load(0.172) -> 2460 Time(602,602)Load(0.181) -> 17286 Time(608,608)Load(0.19) -> 2526 Time(613,613)Load(0.192) -> 21606 Time(621,621)Load(0.196) -> 2515 Time(626,626)Load(0.223) -> 16359 Time(630,630)Load(0.228) -> 12897 Time(635,635)Load(0.244) -> 21194 Time(640,640)Load(0.25) -> 3240 Time(644,644)Load(0.252) -> 17262 Time(647,647)Load(0.265) -> 8186 Time(651,651)Load(0.275) -> 22891 Time(656,656)Load(0.281) -> 2444 Time(665,665)Load(0.284) -> 25904 Time(677,677)Load(0.368) -> depot Time(684,684) & Load(0.368)
+Distance of the route: 61km
+Load of the route: 0.368m^3
+Start time of the route: 498min
+End Time of the route: 684min
+
+Route for vehicle 48:
+depot Time(496,496)Load(0.0) -> 23183 Time(540,540)Load(0.009) -> 25900 Time(542,542)Load(0.056) -> 25891 Time(546,546)Load(0.081) -> 25824 Time(550,550)Load(0.103) -> 26284 Time(554,554)Load(0.107) -> 25706 Time(558,558)Load(0.12) -> 26610 Time(562,562)Load(0.142) -> 25018 Time(566,566)Load(0.235) -> 24656 Time(570,570)Load(0.26) -> 23148 Time(573,573)Load(0.27) -> 23012 Time(576,576)Load(0.296) -> 24933 Time(580,580)Load(0.306) -> 25000 Time(583,583)Load(0.319) -> 25009 Time(587,587)Load(0.332) -> 24108 Time(591,591)Load(0.346) -> 2835 Time(595,595)Load(0.369) -> 22631 Time(599,599)Load(0.382) -> 22695 Time(602,602)Load(0.395) -> 22487 Time(605,605)Load(0.399) -> 22336 Time(609,609)Load(0.417) -> 17234 Time(613,613)Load(0.418) -> 19683 Time(617,617)Load(0.45) -> 22346 Time(621,621)Load(0.581) -> 14171 Time(623,623)Load(0.591) -> 10481 Time(625,625)Load(0.594) -> 10002 Time(627,627)Load(0.598) -> 6577 Time(630,630)Load(0.614) -> 23177 Time(634,634)Load(0.62) -> 26287 Time(637,637)Load(0.633) -> 2586 Time(639,639)Load(0.643) -> 16193 Time(643,643)Load(0.647) -> 25380 Time(647,647)Load(0.658) -> 9736 Time(649,649)Load(0.736) -> 6764 Time(652,652)Load(0.738) -> 25321 Time(658,658)Load(0.762) -> 23712 Time(662,662)Load(0.773) -> 23134 Time(666,666)Load(0.787) -> 15322 Time(670,670)Load(0.8) -> 22755 Time(674,674)Load(0.801) -> 25726 Time(677,677)Load(0.802) -> 19624 Time(680,680)Load(0.805) -> 16466 Time(684,684)Load(0.841) -> 11021 Time(688,688)Load(0.846) -> 2561 Time(691,691)Load(0.862) -> 25702 Time(695,695)Load(0.865) -> 25456 Time(697,697)Load(0.879) -> 22580 Time(701,701)Load(0.883) -> 27352 Time(705,705)Load(0.917) -> 26119 Time(708,708)Load(0.919) -> depot Time(719,719) & Load(0.919)
+Distance of the route: 11km
+Load of the route: 0.919m^3
+Start time of the route: 496min
+End Time of the route: 719min
+
+Route for vehicle 49:
+depot Time(504,504)Load(0.0) -> 2464 Time(540,540)Load(0.023) -> 26078 Time(544,544)Load(0.024) -> 24636 Time(548,548)Load(0.038) -> 5565 Time(552,552)Load(0.051) -> 27406 Time(555,555)Load(0.064) -> 24045 Time(557,557)Load(0.069) -> 25490 Time(560,560)Load(0.086) -> 25201 Time(562,562)Load(0.091) -> 25156 Time(564,564)Load(0.105) -> 24666 Time(568,568)Load(0.118) -> 26188 Time(572,572)Load(0.128) -> 27556 Time(575,575)Load(0.138) -> 26469 Time(579,579)Load(0.166) -> 25386 Time(581,581)Load(0.183) -> 24468 Time(584,584)Load(0.188) -> 19735 Time(587,587)Load(0.19) -> 24878 Time(591,591)Load(0.199) -> 26106 Time(595,595)Load(0.199) -> 27486 Time(599,599)Load(0.325) -> 27398 Time(602,602)Load(0.326) -> 26327 Time(605,605)Load(0.356) -> 26665 Time(608,608)Load(0.37) -> 25310 Time(611,611)Load(0.402) -> 25256 Time(614,614)Load(0.42) -> 25008 Time(618,618)Load(0.423) -> 24919 Time(621,621)Load(0.424) -> 23784 Time(625,625)Load(0.434) -> 22943 Time(629,629)Load(0.606) -> 22907 Time(633,633)Load(0.62) -> 24926 Time(637,637)Load(0.623) -> 25440 Time(640,640)Load(0.634) -> 26015 Time(643,643)Load(0.649) -> 24961 Time(647,647)Load(0.656) -> 23133 Time(650,650)Load(0.661) -> 22324 Time(653,653)Load(0.664) -> 19991 Time(656,656)Load(0.678) -> 21461 Time(659,659)Load(0.782) -> 19776 Time(662,662)Load(0.8) -> 12059 Time(665,665)Load(0.813) -> 16104 Time(668,668)Load(0.832) -> 16144 Time(671,671)Load(0.835) -> 16761 Time(674,674)Load(0.839) -> 19415 Time(677,677)Load(0.845) -> 14852 Time(681,681)Load(0.86) -> 22522 Time(685,685)Load(0.866) -> 22491 Time(689,689)Load(0.879) -> 22812 Time(693,693)Load(0.882) -> 22896 Time(696,696)Load(0.896) -> 23716 Time(698,698)Load(0.905) -> 24009 Time(701,701)Load(0.958) -> depot Time(713,713) & Load(0.958)
+Distance of the route: 10km
+Load of the route: 0.958m^3
+Start time of the route: 504min
+End Time of the route: 713min
+
+Route for vehicle 50:
+depot Time(506,506)Load(0.0) -> 11605 Time(540,540)Load(0.01) -> 27313 Time(544,544)Load(0.155) -> 25794 Time(547,547)Load(0.161) -> 25026 Time(551,551)Load(0.165) -> 14429 Time(555,555)Load(0.211) -> 12228 Time(559,559)Load(0.215) -> 25789 Time(562,562)Load(0.221) -> 22335 Time(565,565)Load(0.245) -> 16248 Time(569,569)Load(0.246) -> 16910 Time(572,572)Load(0.251) -> 12511 Time(576,576)Load(0.265) -> 15936 Time(580,580)Load(0.275) -> 3241 Time(583,583)Load(0.293) -> 2435 Time(588,588)Load(0.303) -> 23745 Time(595,595)Load(0.31) -> 12796 Time(599,599)Load(0.344) -> 27353 Time(603,603)Load(0.38) -> 23607 Time(605,605)Load(0.384) -> 14375 Time(608,608)Load(0.409) -> 10915 Time(611,611)Load(0.415) -> 27281 Time(615,615)Load(0.458) -> 25846 Time(620,620)Load(0.482) -> 23081 Time(623,623)Load(0.488) -> 11575 Time(626,626)Load(0.493) -> 23757 Time(634,634)Load(0.558) -> 24704 Time(647,647)Load(0.564) -> 24362 Time(663,663)Load(0.57) -> 10868 Time(667,667)Load(0.576) -> 16288 Time(672,672)Load(0.6) -> 9431 Time(674,674)Load(0.607) -> 6340 Time(678,678)Load(0.618) -> 14736 Time(684,684)Load(0.689) -> 2479 Time(687,687)Load(0.693) -> 22194 Time(690,690)Load(0.712) -> depot Time(715,715) & Load(0.712)
+Distance of the route: 44km
+Load of the route: 0.712m^3
+Start time of the route: 506min
+End Time of the route: 715min
+
+Real objective: 1140251.1
+Number of cars used: 19
+Total distance of all routes: 837km
+Total load of all routes: 9.707m^3
+Total time of all routes: 13132min
+
+---------------------------------------------------
+
+Total distance of all zones: 3226km
+Total amount of vehicles used before reducing: 69
+Total amount of vehicles reduced: 35
+Total amount of vehicles used after reducing: 34
+Vehicles combined: 
+  Combination of 3 vehicles: total distance 180km & time windows: [(0, 93), (144, 364), (500, 718)]
+     Vehicle (zone 1,32): distance 48km, start & end time: (0,93)
+     Vehicle (zone 2,35): distance 62km, start & end time: (144,364)
+     Vehicle (zone 4,32): distance 70km, start & end time: (500,718)
+  Combination of 3 vehicles: total distance 189km & time windows: [(0, 162), (319, 466), (497, 697)]
+     Vehicle (zone 1,34): distance 67km, start & end time: (0,162)
+     Vehicle (zone 3,32): distance 80km, start & end time: (319,466)
+     Vehicle (zone 4,33): distance 42km, start & end time: (497,697)
+  Combination of 2 vehicles: total distance 127km & time windows: [(0, 190), (319, 548)]
+     Vehicle (zone 1,35): distance 70km, start & end time: (0,190)
+     Vehicle (zone 3,34): distance 57km, start & end time: (319,548)
+  Combination of 2 vehicles: total distance 110km & time windows: [(0, 190), (321, 509)]
+     Vehicle (zone 1,36): distance 61km, start & end time: (0,190)
+     Vehicle (zone 3,35): distance 49km, start & end time: (321,509)
+  Combination of 3 vehicles: total distance 144km & time windows: [(0, 185), (305, 473), (493, 681)]
+     Vehicle (zone 1,37): distance 41km, start & end time: (0,185)
+     Vehicle (zone 3,36): distance 35km, start & end time: (305,473)
+     Vehicle (zone 4,34): distance 68km, start & end time: (493,681)
+  Combination of 2 vehicles: total distance 92km & time windows: [(0, 186), (322, 524)]
+     Vehicle (zone 1,38): distance 23km, start & end time: (0,186)
+     Vehicle (zone 3,38): distance 69km, start & end time: (322,524)
+  Combination of 2 vehicles: total distance 100km & time windows: [(0, 182), (322, 542)]
+     Vehicle (zone 1,39): distance 32km, start & end time: (0,182)
+     Vehicle (zone 3,39): distance 68km, start & end time: (322,542)
+  Combination of 2 vehicles: total distance 108km & time windows: [(0, 183), (318, 554)]
+     Vehicle (zone 1,40): distance 27km, start & end time: (0,183)
+     Vehicle (zone 3,40): distance 81km, start & end time: (318,554)
+  Combination of 2 vehicles: total distance 150km & time windows: [(0, 193), (320, 535)]
+     Vehicle (zone 1,41): distance 80km, start & end time: (0,193)
+     Vehicle (zone 3,41): distance 70km, start & end time: (320,535)
+  Combination of 2 vehicles: total distance 66km & time windows: [(0, 162), (323, 540)]
+     Vehicle (zone 1,42): distance 39km, start & end time: (0,162)
+     Vehicle (zone 3,42): distance 27km, start & end time: (323,540)
+  Combination of 2 vehicles: total distance 87km & time windows: [(0, 198), (316, 535)]
+     Vehicle (zone 1,43): distance 71km, start & end time: (0,198)
+     Vehicle (zone 3,43): distance 16km, start & end time: (316,535)
+  Combination of 2 vehicles: total distance 84km & time windows: [(0, 189), (313, 551)]
+     Vehicle (zone 1,44): distance 13km, start & end time: (0,189)
+     Vehicle (zone 3,44): distance 71km, start & end time: (313,551)
+  Combination of 3 vehicles: total distance 153km & time windows: [(0, 129), (143, 368), (496, 699)]
+     Vehicle (zone 1,45): distance 29km, start & end time: (0,129)
+     Vehicle (zone 2,36): distance 58km, start & end time: (143,368)
+     Vehicle (zone 4,35): distance 66km, start & end time: (496,699)
+  Combination of 2 vehicles: total distance 71km & time windows: [(0, 190), (323, 539)]
+     Vehicle (zone 1,46): distance 55km, start & end time: (0,190)
+     Vehicle (zone 3,45): distance 16km, start & end time: (323,539)
+  Combination of 2 vehicles: total distance 112km & time windows: [(0, 198), (322, 533)]
+     Vehicle (zone 1,47): distance 58km, start & end time: (0,198)
+     Vehicle (zone 3,46): distance 54km, start & end time: (322,533)
+  Combination of 2 vehicles: total distance 79km & time windows: [(0, 201), (324, 532)]
+     Vehicle (zone 1,48): distance 58km, start & end time: (0,201)
+     Vehicle (zone 3,47): distance 21km, start & end time: (324,532)
+  Combination of 3 vehicles: total distance 148km & time windows: [(0, 107), (138, 344), (498, 714)]
+     Vehicle (zone 1,49): distance 34km, start & end time: (0,107)
+     Vehicle (zone 2,37): distance 36km, start & end time: (138,344)
+     Vehicle (zone 4,36): distance 78km, start & end time: (498,714)
+  Combination of 2 vehicles: total distance 24km & time windows: [(0, 190), (323, 539)]
+     Vehicle (zone 1,50): distance 11km, start & end time: (0,190)
+     Vehicle (zone 3,48): distance 13km, start & end time: (323,539)
+  Combination of 2 vehicles: total distance 124km & time windows: [(140, 373), (501, 713)]
+     Vehicle (zone 2,38): distance 66km, start & end time: (140,373)
+     Vehicle (zone 4,37): distance 58km, start & end time: (501,713)
+  Combination of 2 vehicles: total distance 84km & time windows: [(141, 375), (503, 704)]
+     Vehicle (zone 2,39): distance 67km, start & end time: (141,375)
+     Vehicle (zone 4,38): distance 17km, start & end time: (503,704)
+  Combination of 2 vehicles: total distance 70km & time windows: [(143, 360), (502, 698)]
+     Vehicle (zone 2,40): distance 11km, start & end time: (143,360)
+     Vehicle (zone 4,39): distance 59km, start & end time: (502,698)
+  Combination of 2 vehicles: total distance 95km & time windows: [(142, 371), (503, 626)]
+     Vehicle (zone 2,41): distance 67km, start & end time: (142,371)
+     Vehicle (zone 4,40): distance 28km, start & end time: (503,626)
+  Combination of 2 vehicles: total distance 102km & time windows: [(142, 377), (503, 718)]
+     Vehicle (zone 2,42): distance 63km, start & end time: (142,377)
+     Vehicle (zone 4,41): distance 39km, start & end time: (503,718)
+  Combination of 2 vehicles: total distance 94km & time windows: [(133, 362), (502, 639)]
+     Vehicle (zone 2,43): distance 64km, start & end time: (133,362)
+     Vehicle (zone 4,42): distance 30km, start & end time: (502,639)
+  Combination of 2 vehicles: total distance 92km & time windows: [(142, 380), (501, 651)]
+     Vehicle (zone 2,44): distance 80km, start & end time: (142,380)
+     Vehicle (zone 4,43): distance 12km, start & end time: (501,651)
+  Combination of 2 vehicles: total distance 128km & time windows: [(139, 371), (498, 665)]
+     Vehicle (zone 2,45): distance 72km, start & end time: (139,371)
+     Vehicle (zone 4,44): distance 56km, start & end time: (498,665)
+  Combination of 2 vehicles: total distance 93km & time windows: [(143, 362), (499, 662)]
+     Vehicle (zone 2,46): distance 37km, start & end time: (143,362)
+     Vehicle (zone 4,45): distance 56km, start & end time: (499,662)
+  Combination of 2 vehicles: total distance 44km & time windows: [(141, 371), (503, 716)]
+     Vehicle (zone 2,47): distance 12km, start & end time: (141,371)
+     Vehicle (zone 4,46): distance 32km, start & end time: (503,716)
+  Combination of 2 vehicles: total distance 78km & time windows: [(136, 368), (498, 684)]
+     Vehicle (zone 2,48): distance 17km, start & end time: (136,368)
+     Vehicle (zone 4,47): distance 61km, start & end time: (498,684)
+  Combination of 2 vehicles: total distance 28km & time windows: [(146, 366), (496, 719)]
+     Vehicle (zone 2,50): distance 17km, start & end time: (146,366)
+     Vehicle (zone 4,48): distance 11km, start & end time: (496,719)
