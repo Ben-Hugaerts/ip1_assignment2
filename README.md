@@ -48,14 +48,14 @@ The most important files are CVRP.py and CVRP_TW.py as these contain the solvers
   This directory stores results. There is a charging schedule generated using "charging_schedule.py" for the normal CVRP problem available. When running "CVRP.py" and "CVRP_TW.py" textfiles are generated with the results and stored here. Two examples of these results are already available.
 
 ## Valhalla Docker image
-To use "matrices_generator_CVRP.py" and "matrices_generator_CVRP_TW.py" you need to run the Valhalla Docker image in a container with a graoh if Belgium. First install Docker Desktop using the link below:
+To use "matrices_generator_CVRP.py" and "matrices_generator_CVRP_TW.py" you need to run the Valhalla Docker image in a container with a graph if Belgium. First install Docker Desktop using the link below:
 
 https://www.docker.com/products/docker-desktop/
 
 Next run the following command in a terminal:
 
 ```terminal
-$ docker run -dt --name valhalla_gis-ops -p 8002:8002 -v $PWD/custom_files:/custom_files -e tile_urls=https://download.geofabrik.de/europe/andorra-latest.osm.pbf ghcr.io/gis-ops/docker-valhalla/valhalla:latest
+$ docker run -dt --name valhalla_gis-ops -p 8002:8002 -v $PWD/custom_files:/custom_files -e tile_urls=https://download.geofabrik.de/europe/belgium-latest.osm.pbf ghcr.io/gis-ops/docker-valhalla/valhalla:latest
 ```
 You can open Docker Desktop to check if the container is running and shut it down, restart or turn it back on when you want to. For more information check the documention from Valhalla:
 
