@@ -2,6 +2,11 @@ from gurobipy import *
 import pandas as pd
 from datetime import datetime, timedelta
 
+# With time windows 12h (4x3h) or without time windows 8h
+##########################################
+time_windows = True
+##########################################
+
 start_date = datetime.strptime('19/07/2022', '%d/%m/%Y')
 end_date = datetime.strptime('26/08/2022', '%d/%m/%Y')
 
@@ -34,11 +39,16 @@ for date in date_list:
     lengths.append(len(location_ids))
 
 cars = []
-
-for i in range(len(lengths)):
-    cars.append(round(2.5 + 0.0069*lengths[i]))
-    if lengths[i] == 0:
-        cars[i] = 0
+if time_windows == False:
+    for i in range(len(lengths)):
+        cars.append(round(2.5 + 0.009*lengths[i]))
+        if lengths[i] == 0:
+            cars[i] = 0
+else:
+    for i in range(len(lengths)):
+        cars.append(round(3.25 + 0.0137*lengths[i]))
+        if lengths[i] == 0:
+            cars[i] = 0
 
 # Create a model
 m = Model("charging_schedule")
