@@ -1,10 +1,11 @@
 from gurobipy import *
 import pandas as pd
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, time
+import csv
 
 # With time windows 12h (4x3h) or without time windows 8h
 ##########################################
-time_windows = True
+time_windows = False
 ##########################################
 
 # Make lists with the dates when packages need to be delivered and when vehicles have to be charged
@@ -15,14 +16,6 @@ date_list = []
 while start_date <= end_date:
     date_list.append(start_date.strftime('%d/%m/%Y'))
     start_date += timedelta(days=1)
-
-day_before_start_date = datetime.strptime('18/07/2022', '%d/%m/%Y')
-day_before_end_date = datetime.strptime('25/08/2022', '%d/%m/%Y')
-
-charge_date_list = []
-while day_before_start_date <= day_before_end_date:
-    charge_date_list.append(day_before_start_date.strftime('%d/%m/%Y'))
-    day_before_start_date += timedelta(days=1)
 
 # Convert csv files to dataframes
 locations_dataframe = pd.read_csv('locations.csv')
@@ -109,7 +102,7 @@ m.optimize()
 # Print the result
 # Define the column widths
 date_width = 15
-charge_width = 20
+charge_width = 40
 dep_width = 35
 demand_width = 20
 
@@ -119,11 +112,11 @@ print("-" * (date_width + charge_width + dep_width + demand_width + 3))
 
 # Print the data
 for i in range(len(cars)):
-    charge_str = f"Charge {int(charg[i].x)} vehicles "
+    charge_str = f"At most {int(charg[i].x)} chargers are needed"
     dep_str = f"{int(dep[i].x)} charged, {int(max(cars) - dep[i].x - cars[i])} decharged "
     demand_str = f"{int(cars[i])} vehicles"
     print(
-        f"{charge_date_list[i]:<{date_width}}{charge_str:<{charge_width}}{dep_str:<{dep_width}}{demand_str:<{demand_width}}")
+        f"{date_list[i]:<{date_width}}{charge_str:<{charge_width}}{dep_str:<{dep_width}}{demand_str:<{demand_width}}")
 
 print(f"\nAmount of chargers needed: {int(max_chargers.x)}")
 print("")
@@ -198,6 +191,7 @@ for vehicle in trans_states:
         longest_seqs[state] = max(longest_seqs[state], current_seq_length)
 
 # print the result for each state
+print("------------------------------------------------------------------")
 print("The following results are for test purposes only:")
 for state, longest_seq in longest_seqs.items():
     if state == 'c':
@@ -206,5 +200,82 @@ for state, longest_seq in longest_seqs.items():
         print(f"The longest time a vehicle remains at the depot decharged is {longest_seq} days")
     if state == 'u':
         print(f"The longest time a vehicle is used consecutively is {longest_seq} days")
+print("------------------------------------------------------------------")
+with open('prices.csv', newline='') as csvfile:
+    reader = csv.DictReader(csvfile, delimiter=';')
+    euro_list = []
+    for row in reader:
+        euro_list.append(row)
 
+euro_list.reverse()
 
+day_before_start_date = datetime.strptime('18/07/2022', '%d/%m/%Y')
+day_before_end_date = datetime.strptime('25/08/2022', '%d/%m/%Y')
+
+charge_date_list_time = []
+while day_before_start_date <= day_before_end_date:
+    date_with_time = datetime.combine(day_before_start_date, time(hour=18, minute=0, second=0))
+    charge_date_list_time.append(date_with_time)
+    day_before_start_date += timedelta(days=1)
+
+prices = [[] for _ in range(len(charge_date_list_time))]
+
+for day in charge_date_list_time:
+    start_time = day
+    end_time = start_time + timedelta(hours=23)
+    index = charge_date_list_time.index(day)
+    for item in euro_list:
+        if start_time <= datetime.strptime(item['Date'], '%d/%m/%Y %H:%M:%S') <= end_time:
+            price = float(item['Euro'].replace('€', '').replace(',', '.').strip())
+            prices[index].append(price)
+
+schedules = [[] for _ in range(len(charge_date_list_time))]
+
+for day in prices:
+    mean_price_night = sum(day[0:11])/12
+    smallest_values = sorted(((value, index) for index, value in enumerate(day[12:23])), key=lambda x: x[0])[:5]
+    smallest_indexes = [index for value, index in smallest_values]
+    mean_price_day = sum([day[index] for index in smallest_indexes]) / 5
+
+    if mean_price_day < mean_price_night:
+        schedules[prices.index(day)] = smallest_indexes
+    else:
+        schedules[prices.index(day)] = 'night'
+
+print("")
+
+start_date_print = datetime.strptime('18/07/2022', '%d/%m/%Y')
+end_date_print = datetime.strptime('26/08/2022', '%d/%m/%Y')
+
+date_list_print = []
+while start_date_print <= end_date_print:
+    date_list_print.append(start_date_print.strftime('%d/%m/%Y'))
+    start_date_print += timedelta(days=1)
+
+dep_values = [0] + dep_values
+
+for i in range(len(schedules)):
+    schedule = schedules[i]
+    cars_charg_whenever = charg_values[i] - (cars[i] - dep_values[i])
+    if schedule == 'night' or cars_charg_whenever == 0:
+        print(f"On {date_list_print[i]} evening, charge {int(charg_values[i])} vehicles overnight")
+    else:
+        sorted_schedule = sorted(set(schedule))
+        j = 0
+        hourly_schedule = ""
+        while j < len(sorted_schedule):
+            start_hour = sorted_schedule[j]
+            end_hour = start_hour
+            while j + 1 < len(sorted_schedule) and sorted_schedule[j + 1] == end_hour + 1:
+                end_hour = sorted_schedule[j + 1]
+                j += 1
+
+            hourly_schedule += f"-- {start_hour+6}:00h-{end_hour+7}:00h --"
+            j += 1
+        if cars[i] > dep_values[i]:
+            print(f"On {date_list_print[i]} evening, charge {cars[i] - dep_values[i]} vehicles overnight")
+            print(f"On {date_list_print[i+1]} charge {int(cars_charg_whenever)} vehicles during the following periods: {hourly_schedule}")
+        else:
+            print(f"On {date_list_print[i]} evening, charge {0} vehicles overnight")
+            print(
+                f"On {date_list_print[i+1]} charge {int(charg_values[i])} vehicles during the following periods: {hourly_schedule}")
