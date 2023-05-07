@@ -6,6 +6,7 @@ import time
 from concurrent.futures import ThreadPoolExecutor
 from concurrent.futures import wait
 from functions import join_adjacent_zones
+from functions import haversine
 
 start_time = time.time()
 
@@ -58,12 +59,9 @@ zone5_location_ids = []
 zone5_valhalla_coordinates = []
 zone5_volumes = []
 
-# Divide the coordinates into the zones
 for i in range(1, len(location_ids)):
-    # Get the coordinates of the location
     lat_location = valhalla_coordinates[i]['lat']
     lon_location = valhalla_coordinates[i]['lon']
-
     # Determine which zone the location belongs to based on its coordinates
     if lat_location >= lat_depot and lon_location >= lon_depot:
         zone1_location_ids.append(location_ids[i])
@@ -98,6 +96,7 @@ ids_zones, joined_zones = join_adjacent_zones(ids_zones, 300)
 valhalla_zones, joined_zones = join_adjacent_zones(valhalla_zones, 300)
 volumes_zones, joined_zones = join_adjacent_zones(volumes_zones, 300)
 
+# Add depot to each zone
 for i in range(len(ids_zones)):
     ids_zones[i] = ['depot'] + ids_zones[i]
     valhalla_zones[i] = [{'lat': lat_depot, 'lon': lon_depot}] + valhalla_zones[i]
@@ -116,6 +115,7 @@ print("Starting building of matrices ...")
 distance_matrices = []
 time_matrices = []
 
+# Initialize the distance matrices
 for zone in ids_zones:
     size = len(zone)
     distance_matrix = [[1e10] * size for _ in range(size)]
@@ -123,25 +123,9 @@ for zone in ids_zones:
     distance_matrices.append(distance_matrix)
     time_matrices.append(time_matrix)
 
-def haversine(lat1, lon1, lat2, lon2):
-    # This function calculates the distance as the crow flies between two coordinates
 
-    R = 6371  # Earth radius in kilometers
-
-    phi1 = math.radians(lat1)
-    phi2 = math.radians(lat2)
-    delta_phi = math.radians(lat2 - lat1)
-    delta_lambda = math.radians(lon2 - lon1)
-
-    a = math.sin(delta_phi/2)**2 + \
-        math.cos(phi1)*math.cos(phi2)*math.sin(delta_lambda/2)**2
-    c = 2*math.atan2(math.sqrt(a), math.sqrt(1-a))
-
-    return R*c*1000  # Distance in meters
-
-
+# This function determines the distance and time over real routes between one origin and k destinations
 def process_location(i, loc_id, coord, valhalla_coordinates, location_ids, distance_matrix, time_matrix):
-    # This function calculates the distance and time over real routes between one origin and k destinations
 
     distances = []
     for j, (other_id, other_coord) in enumerate(zip(location_ids, valhalla_coordinates)):
@@ -155,6 +139,7 @@ def process_location(i, loc_id, coord, valhalla_coordinates, location_ids, dista
     closest = distances[:k]
     target_location_ids = [t[0] for t in closest]  # extract location IDs from tuples
     target_coordinates = [{'lat': lat_depot, 'lon': lon_depot}]
+    # Retrieve the indexes to fill in the values at the right position
     index_list = [0]
     for location_id in target_location_ids:
         index = location_ids.index(location_id)
@@ -176,7 +161,7 @@ def process_location(i, loc_id, coord, valhalla_coordinates, location_ids, dista
     else:
         print(f"Request failed with status code {response.status_code}: {response.content}")
 
-    # Populate the matrices with the distances and times
+    # Fill the current row of the matrices with the distances and times at the right indexes
     for l in range(len(index_list)):
         distance_matrix[i][index_list[l]] = data['sources_to_targets'][0][l]['distance']
         time_matrix[i][index_list[l]] = data['sources_to_targets'][0][l]['time']
@@ -184,16 +169,16 @@ def process_location(i, loc_id, coord, valhalla_coordinates, location_ids, dista
     distance_matrix[i][i] = 0
     time_matrix[i][i] = 0
 
-
+# Construct the matrices for all the zones
 for p in range(len(ids_zones)):
     # Loop over the zones
 
-    # Number of closest locations to find
+    # Number of closest locations to find per location
     k = 100
 
+    # Matrices are constructed row by row and this process is sped up by multithreading
     threads = []
-
-    with ThreadPoolExecutor(max_workers=8) as executor:
+    with ThreadPoolExecutor() as executor:
         # Loop through each location and submit a task to the thread pool
         for i, (loc_id, coord) in enumerate(zip(ids_zones[p], valhalla_zones[p])):
             t = executor.submit(process_location, i, loc_id, coord, valhalla_zones[p], ids_zones[p], distance_matrices[p], time_matrices[p])
@@ -207,7 +192,7 @@ for p in range(len(ids_zones)):
         if t.exception() is not None:
             raise t.exception()
 
-    # Depot request
+    # Depot request (distance and time to all locations is determined by working with batches
     # Construct request for Valhalla
     start_time_depot = time.time()
 
@@ -252,19 +237,15 @@ for p in range(len(ids_zones)):
 
 
 # Save results
-#print("Location IDs: ", location_ids)
 with open('location_ids.json', 'w') as location_ids_json:
     json.dump(ids_zones, location_ids_json)
 
-#print("Total volumes in cm3: ", volumes)
 with open('total_volumes_in_cm3.json', 'w') as volumes_json:
     json.dump(volumes_zones, volumes_json)
 
-#print("Distance matrix in km: ", distance_matrix)
 with open('distance_matrix.json', 'w') as distance_matrix_json:
     json.dump(distance_matrices, distance_matrix_json)
 
-#print("Time matrix in seconds: ", time_matrix)
 with open('time_matrix.json', 'w') as time_matrix_json:
     json.dump(time_matrices, time_matrix_json)
 
