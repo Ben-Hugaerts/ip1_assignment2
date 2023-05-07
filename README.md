@@ -45,7 +45,7 @@ The most important files are CVRP.py and CVRP_TW.py as these contain the solvers
 
 * Results directory
 
-  When running "CVRP.py" and "CVRP_TW.py" textfiles are generated with the results and stored here. Two examples of these results are already available
+  This directory stores results. There is a charging schedule generated using "charging_schedule.py" for the normal CVRP problem available. When running "CVRP.py" and "CVRP_TW.py" textfiles are generated with the results and stored here. Two examples of these results are already available.
 
 ## Valhalla Docker image
 To use "matrices_generator_CVRP.py" and "matrices_generator_CVRP_TW.py" you need to run the Valhalla Docker image in a container with a graoh if Belgium. First install Docker Desktop using the link below:
