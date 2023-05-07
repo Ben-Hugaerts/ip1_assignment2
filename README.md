@@ -41,7 +41,7 @@ The most important files are CVRP.py and CVRP_TW.py as these contain the solvers
 
 * prices.csv
 
-  Contains hourly electricity prices of the considered period, donwloaded from: https://my.elexys.be/MarketInformation/SpotBelpex.aspx
+  Contains hourly electricity prices of the considered period, downloaded from: https://my.elexys.be/MarketInformation/SpotBelpex.aspx
 
 * Results directory
 
