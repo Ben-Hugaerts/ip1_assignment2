@@ -1,0 +1,62 @@
+ ********** CHARGING SCHEDULE **********
+On 18/07/2022 evening, charge 4 vehicles overnight
+On 19/07/2022 charge 14 vehicles during the following periods: -- 10:00h-14:00h ---- 16:00h-17:00h --
+On 19/07/2022 evening, charge 0 vehicles overnight
+On 20/07/2022 charge 9 vehicles during the following periods: -- 6:00h-7:00h ---- 10:00h-11:00h ---- 12:00h-14:00h ---- 15:00h-16:00h --
+On 20/07/2022 evening, charge 4 vehicles overnight
+On 21/07/2022 evening, charge 0 vehicles overnight
+On 22/07/2022 charge 5 vehicles during the following periods: -- 12:00h-17:00h --
+On 22/07/2022 evening, charge 0 vehicles overnight
+On 23/07/2022 evening, charge 0 vehicles overnight
+On 24/07/2022 evening, charge 0 vehicles overnight
+On 25/07/2022 charge 10 vehicles during the following periods: -- 12:00h-17:00h --
+On 25/07/2022 evening, charge 1.0 vehicles overnight
+On 26/07/2022 charge 12 vehicles during the following periods: -- 11:00h-12:00h ---- 13:00h-17:00h --
+On 26/07/2022 evening, charge 11 vehicles overnight
+On 27/07/2022 evening, charge 7 vehicles overnight
+On 28/07/2022 evening, charge 0 vehicles overnight
+On 29/07/2022 charge 6 vehicles during the following periods: -- 11:00h-13:00h ---- 14:00h-17:00h --
+On 29/07/2022 evening, charge 11 vehicles overnight
+On 30/07/2022 evening, charge 0 vehicles overnight
+On 31/07/2022 charge 11 vehicles during the following periods: -- 11:00h-12:00h ---- 13:00h-17:00h --
+On 31/07/2022 evening, charge 0 vehicles overnight
+On 01/08/2022 charge 9 vehicles during the following periods: -- 12:00h-17:00h --
+On 01/08/2022 evening, charge 6 vehicles overnight
+On 02/08/2022 evening, charge 0 vehicles overnight
+On 03/08/2022 charge 8 vehicles during the following periods: -- 11:00h-15:00h ---- 16:00h-17:00h --
+On 03/08/2022 evening, charge 10 vehicles overnight
+On 04/08/2022 evening, charge 0 vehicles overnight
+On 05/08/2022 charge 12 vehicles during the following periods: -- 12:00h-17:00h --
+On 05/08/2022 evening, charge 0 vehicles overnight
+On 06/08/2022 charge 4 vehicles during the following periods: -- 11:00h-12:00h ---- 13:00h-17:00h --
+On 06/08/2022 evening, charge 0 vehicles overnight
+On 07/08/2022 charge 6 vehicles during the following periods: -- 11:00h-16:00h --
+On 07/08/2022 evening, charge 10.0 vehicles overnight
+On 08/08/2022 charge 2 vehicles during the following periods: -- 11:00h-16:00h --
+On 08/08/2022 evening, charge 12.0 vehicles overnight
+On 09/08/2022 charge 6 vehicles during the following periods: -- 11:00h-16:00h --
+On 09/08/2022 evening, charge 4.0 vehicles overnight
+On 10/08/2022 charge 13 vehicles during the following periods: -- 11:00h-16:00h --
+On 10/08/2022 evening, charge 0 vehicles overnight
+On 11/08/2022 charge 10 vehicles during the following periods: -- 11:00h-16:00h --
+On 11/08/2022 evening, charge 6 vehicles overnight
+On 12/08/2022 evening, charge 0 vehicles overnight
+On 13/08/2022 charge 12 vehicles during the following periods: -- 11:00h-16:00h --
+On 13/08/2022 evening, charge 0 vehicles overnight
+On 14/08/2022 charge 9 vehicles during the following periods: -- 11:00h-16:00h --
+On 14/08/2022 evening, charge 4 vehicles overnight
+On 15/08/2022 evening, charge 18 vehicles overnight
+On 16/08/2022 evening, charge 18 vehicles overnight
+On 17/08/2022 evening, charge 1.0 vehicles overnight
+On 18/08/2022 charge 17 vehicles during the following periods: -- 12:00h-17:00h --
+On 18/08/2022 evening, charge 0 vehicles overnight
+On 19/08/2022 charge 6 vehicles during the following periods: -- 12:00h-17:00h --
+On 19/08/2022 evening, charge 14 vehicles overnight
+On 20/08/2022 evening, charge 9 vehicles overnight
+On 21/08/2022 evening, charge 8 vehicles overnight
+On 22/08/2022 evening, charge 9.0 vehicles overnight
+On 23/08/2022 charge 4 vehicles during the following periods: -- 11:00h-16:00h --
+On 23/08/2022 evening, charge 18 vehicles overnight
+On 24/08/2022 evening, charge 11.0 vehicles overnight
+On 25/08/2022 charge 7 vehicles during the following periods: -- 11:00h-16:00h --
+On 25/08/2022 evening, charge 3.0 vehicles overnight
