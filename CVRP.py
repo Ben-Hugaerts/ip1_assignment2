@@ -5,7 +5,7 @@ from ortools.constraint_solver import pywrapcp
 import json
 
 """Parameters"""
-titleResultfile = '0min TW(12u) 15_08_5m^3_185km_5u_50000EUR.txt'  # Title of the resultfile
+titleResultfile = 'CVRP_15_08_2022.txt'  # Title of the resultfile
 
 # Vehicle:
 capacity_LCV = 3500000 * 0.8   # Assume 80% of the vehicles volume (cm^3) can be used due to packing
@@ -18,11 +18,11 @@ cost_driven_km = 0.3            # Cost to drive 1 km in EUR
 
 # parameters algorithm
 max_time_per_vehicle = 8*60     # Max time that a vehicle can drive in min
-num_vehicles = 12               # Number of vehicles that a zone maximum can use
+num_vehicles = 12               # # Maximum number of vehicles solver can take in account per zone
 searchLimit_sec = 10            # Maximum search limit in seconds per zone
 
 # Delivery
-service_time = 1                # Service time in min: time needed for the courier to deliver the package
+service_time = 2                # Service time in min: time needed for the courier to deliver the package
 
 
 """Make a file to write the results"""

@@ -9,7 +9,7 @@ import json
 
 """Parameters"""
 
-titleResultfile = 'TW 15_08_2022.txt'  # Title of the resultfile
+titleResultfile = 'CVRP_TW 15_08_2022.txt'  # Title of the resultfile
 # Vehicle:
 capacity_LCV = 3500000 * 0.8  # Assume 80% of the vehicles volume (cm^3) can be used due to packing
 max_range_LCV = 185  # Maximum range LCV in km
@@ -19,7 +19,7 @@ real_vehicle_cost = 40000  # Cost for 1 vehicle in EUR
 cost_driven_km = 0.3  # Cost to drive 1 km in EUR
 # parameters algorithm
 max_time_per_vehicle = 720  # Max time that a LCV can drive
-num_vehicles = 50
+num_vehicles = 50 # Maximum number of vehicles solver can take in account per zone
 searchLimit_sec = 20  # Maximum search limit in seconds per zone
 # Delivery
 service_time = 2
