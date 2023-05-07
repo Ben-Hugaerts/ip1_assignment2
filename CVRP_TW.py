@@ -9,13 +9,13 @@ import json
 
 """Parameters"""
 
-titleResultfile = 'TW 01_08_2022.txt'  # Title of the resultfile
+titleResultfile = 'TW 15_08_2022.txt'  # Title of the resultfile
 # Vehicle:
-capacity_LCV = 5000000 * 0.8  # Assume 80% of the vehicles volume (cm^3) can be used due to packing
+capacity_LCV = 3500000 * 0.8  # Assume 80% of the vehicles volume (cm^3) can be used due to packing
 max_range_LCV = 185  # Maximum range LCV in km
 charging_time = 5 * 60  # charging time at depot in min for 0 to 100%
 # Costs
-real_vehicle_cost = 50000  # Cost for 1 vehicle in EUR
+real_vehicle_cost = 40000  # Cost for 1 vehicle in EUR
 cost_driven_km = 0.3  # Cost to drive 1 km in EUR
 # parameters algorithm
 max_time_per_vehicle = 720  # Max time that a LCV can drive
@@ -42,7 +42,7 @@ resultfile += str("\n \n")
 
 adjusted_cost_driven_km = 1
 adjusted_vehicle_cost = real_vehicle_cost * (adjusted_cost_driven_km / cost_driven_km)
-with open('distance_matrix.json', 'r') as distance_matrix_file:
+with open('inputs_CVRP_TW/12h (4x3h)/15_08_2022/distance_matrix.json', 'r') as distance_matrix_file:
     all_distance_matrices = json.load(distance_matrix_file)
     num_zones = len(all_distance_matrices)  # Read the number of zones used
 
@@ -55,15 +55,15 @@ total_distance_all_zones = 0
 def create_data_model(num_vehicles, zone):
     """Stores the data for the problem."""
     data = {}
-    with open('distance_matrix.json', 'r') as distance_matrix_file:
+    with open('inputs_CVRP_TW/12h (4x3h)/15_08_2022/distance_matrix.json', 'r') as distance_matrix_file:
         distance_matrices = json.load(distance_matrix_file)
         data['distance_matrix'] = distance_matrices[zone]
 
-    with open('total_volumes_in_cm3.json', 'r') as total_volumes_file:
+    with open('inputs_CVRP_TW/12h (4x3h)/15_08_2022/total_volumes_in_cm3.json', 'r') as total_volumes_file:
         volumes = json.load(total_volumes_file)
         data['demands'] = volumes[zone]
 
-    with open('time_matrix.json', 'r') as time_matrix_file:
+    with open('inputs_CVRP_TW/12h (4x3h)/15_08_2022/time_matrix.json', 'r') as time_matrix_file:
         time_matrices = json.load(time_matrix_file)
         # Add service times to the routes
         for p in range(len(time_matrices)):
@@ -72,11 +72,11 @@ def create_data_model(num_vehicles, zone):
                     time_matrices[p][r][c] += service_time
         data['time_matrix'] = time_matrices[zone]
 
-    with open('time_windows.json', 'r') as time_windows_file:
+    with open('inputs_CVRP_TW/12h (4x3h)/15_08_2022/time_windows.json', 'r') as time_windows_file:
         time_windows = json.load(time_windows_file)
         data['time_windows'] = time_windows[zone]
 
-    with open('location_ids.json', 'r') as locations_file:
+    with open('inputs_CVRP_TW/12h (4x3h)/15_08_2022/location_ids.json', 'r') as locations_file:
         location_ids_all = json.load(locations_file)
         data['locations_ids'] = location_ids_all[zone]
 

@@ -5,15 +5,15 @@ from ortools.constraint_solver import pywrapcp
 import json
 
 """Parameters"""
-titleResultfile = '0min TW(12u) 12_08_5m^3_185km_5u_50000EUR.txt'  # Title of the resultfile
+titleResultfile = '0min TW(12u) 15_08_5m^3_185km_5u_50000EUR.txt'  # Title of the resultfile
 
 # Vehicle:
-capacity_LCV = 5000000 * 0.8   # Assume 80% of the vehicles volume (cm^3) can be used due to packing
+capacity_LCV = 3500000 * 0.8   # Assume 80% of the vehicles volume (cm^3) can be used due to packing
 max_range_LCV = 185             # Maximum range vehicle in km
 charging_time = 5 * 60         # charging time at depot in min for 0 to 100%
 
 # Costs
-real_vehicle_cost = 50000       # Cost for 1 vehicle in EUR
+real_vehicle_cost = 40000       # Cost for 1 vehicle in EUR
 cost_driven_km = 0.3            # Cost to drive 1 km in EUR
 
 # parameters algorithm
@@ -47,7 +47,7 @@ resultfile += str("\n \n")
 
 adjusted_cost_driven_km = 1
 adjusted_vehicle_cost = real_vehicle_cost * (adjusted_cost_driven_km / cost_driven_km)
-with open('inputs_CVRP/12_08_2022/distance_matrix.json', 'r') as distance_matrix_file:
+with open('inputs_CVRP/15_08_2022/distance_matrix.json', 'r') as distance_matrix_file:
     all_distance_matrices = json.load(distance_matrix_file)
     num_zones = len(all_distance_matrices)  # Read the number of zones used
 
@@ -62,15 +62,15 @@ total_distance_all_zones = 0
 def create_data_model(num_vehicles, zone):
     """Stores the data for the problem."""
     data = {}
-    with open('inputs_CVRP/12_08_2022/distance_matrix.json', 'r') as distance_matrix_file:
+    with open('inputs_CVRP/15_08_2022/distance_matrix.json', 'r') as distance_matrix_file:
         distance_matrices = json.load(distance_matrix_file)
         data['distance_matrix'] = distance_matrices[zone]
 
-    with open('inputs_CVRP/12_08_2022/total_volumes_in_cm3.json', 'r') as total_volumes_file:
+    with open('inputs_CVRP/15_08_2022/total_volumes_in_cm3.json', 'r') as total_volumes_file:
         volumes = json.load(total_volumes_file)
         data['demands'] = volumes[zone]
 
-    with open('inputs_CVRP/12_08_2022/time_matrix.json', 'r') as time_matrix_file:
+    with open('inputs_CVRP/15_08_2022/time_matrix.json', 'r') as time_matrix_file:
         time_matrices = json.load(time_matrix_file)
         # Add service times to the routes
         for p in range(len(time_matrices)):
@@ -79,7 +79,7 @@ def create_data_model(num_vehicles, zone):
                     time_matrices[p][r][c] += service_time
         data['time_matrix'] = time_matrices[zone]
 
-    with open('inputs_CVRP/12_08_2022/location_ids.json', 'r') as locations_file:
+    with open('inputs_CVRP/15_08_2022/location_ids.json', 'r') as locations_file:
         location_ids_all = json.load(locations_file)
         data['locations_ids'] = location_ids_all[zone]
 
